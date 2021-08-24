@@ -1,0 +1,1324 @@
+
+
+
+    
+                                                HTML = HYPER TEXT MARKUP LANGUAGE
+    ▲     ┌─────────────────────────────────────────────────────────────────────────────────────────────────────────────────────┐
+    │     │<HEADER>                                                                                                             │
+    │     │                                                                                                                     │
+    │     │                                                                                                                     │
+    │     │</HEADER>                                                                                                            │
+    │     ├─────────────────────────────────────────────────────────────────────────────────────────────────────────────────────┤
+    │     │                                                                                                                     │
+    │     │                                                                                                                     │
+    │     │           <SECTION>                                         <SECTION>                                               │
+    │     │       ┌──────────────────────────────────────┐             ┌─────────────────────────────────────────────────┐      │
+    │     │       │                                      │             │   <HEADER>                                      │      │
+    │     │       │      <ARTICLE>                       │             │   </HEADER>                                     │      │
+    │     │       │     ┌────────────────────────┐       │             ├─────────────────────────────────────────────────┤      │
+    │     │       │     │                        │       │             │                                                 │      │
+    │     │       │     │                        │       │             │                                                 │      │
+    │     │       │     │                        │       │             │                                                 │      │
+          │       │     │                        │       │             │     ┌─────────────────────────────────────┐     │      │
+          │       │     │                        │       │             │     │ <ARTICLE>                           │     │      │
+    B     │       │     │                        │       │             │     │                                     │     │      │
+          │       │     │                        │       │             │     │                                     │     │      │
+    O     │       │     │                        │       │             │     │              ARTICLE                │     │      │
+          │       │     │                        │       │             │     │                                     │     │      │
+    D     │       │     │                        │       │             │     │                                     │     │      │
+          │       │     │                        │       │             │     │                           </ARTICLE>│     │      │
+    Y     │       │     │                        │       │             │     └─────────────────────────────────────┘     │      │
+          │       │     │                        │       │             │                                                 │      │
+          │       │     │              </ARTICLE>│       │             │                                                 │      │
+    │     │       │     └────────────────────────┘       │             │                                                 │      │
+    │     │       │                                      │             ├─────────────────────────────────────────────────┤      │
+    │     │       │                                      │             │  <FOOTER>                                       │      │
+    │     │       │                                      │             │  </FOOTER>                                      │      │
+    │     │       └──────────────────────────────────────┘             └─────────────────────────────────────────────────┘      │
+    │     │                                     </SECTION>                                                      </SECTION>      │
+    │     │                                                                                                                     │
+    │     │                                                                                                                     │
+    │     │                                                                                                                     │
+    │     │                                                                                                                     │
+    │     │                                                                                                                     │
+    │     │                                                                                                                     │
+    │     ├─────────────────────────────────────────────────────────────────────────────────────────────────────────────────────┤
+    │     │<FOOTER>                                                                                                             │
+    │     │                                                                                                                     │
+    │     │</FOOTER>                                                                                                            │
+    ▼     └─────────────────────────────────────────────────────────────────────────────────────────────────────────────────────┘
+
+
+
+                                                                                                               
+                                                                                                               
+               +----------------------------------------------------------------------------------------------+
+               |                                                                                              |
+               | +-----------+        +------------------------------------------+                            |
+               | |           |        |               + BUSCADOR                 |                            |
+               | |  LOGOTIPO |        |                                          |                            |
+               | | <IMG>     |        +------------------------------------------+   +-----------------------+|
+               | +-----------+                                                       |                       ||
+               |                  +----------------------------------------------+   | <A HREF....>          ||
+               |                  |<NAV>                                         |   |                       ||
+               |                  |   <UL>                                       |   |    REDES SOCIALES     ||
+               |                  |          BARRA DE NAVEGACION                 |   |                       ||
+               |                  |                                  </UL>       |   |                       ||
+               |                  |                                       </NAV> |   |                </A>   ||
+               |                  +----------------------------------------------+   +-----------------------+|
+               ------------------------------------------------------------------------------------------------
+               |                                                                                              |
+               |                                                                                              |
+               |                                                                                              |
+               |                                                                                              |
+               |                                                                                              |
+               |          +-------------------------+                                                         |
+               |          |<H2>                     |                                                         |
+               |          |     PRODUCTO            |                                                         |
+               |          |                         |                                                         |
+               |          |              </H2>      |                                                         |
+               |          ---------------------------                                                         |
+               |          |                         |                                                         |
+               |          | contenido del producto  |                                                         |
+-              |          |                         |                                                         |
+               |          | <img href "...." >      |                                                         |
+               |          |                         |                                                         |
+               |          |                         |                                                         |
+               |          |                         |                                                         |
+               |          |                         |                                                         |
+               |          |                         |                                                         |
+               |          |                         |                                                         |
+               |          ---------------------------                                                         |
+               |          |<a href="#">             |                                                         |
+               |          |     continuar leyendo   |                                                         |
+               |          |                         |                                                         |
+               |          |                </a>     |                                                         |
+               |          |                         |                                                         |
+               |          +-------------------------+                                                         |
+               |                                                                                              |
+               |                                                                                              |
+               |                                                                                              |
+               ------------------------------------------------------------------------------------------------
+               | <footer>                                                                                     |
+               |             <p> todos los derechos reservados </p>                                           |
+               |                                                                                              |
+               | <nav>                                                                                        |
+               |    <ul> <a href="#"> terminos y condiciones </a> </ul>                                       |
+               |    <ul> <a href="#"> mapa de sitio </a> </ul>                                                |
+               |    <ul> <a href="#"> informacion legal </a> </ul>                                            |
+               |                                                            </nav>                            |
+               |                                                                 </footer>                    |
+               +----------------------------------------------------------------------------------------------+
+
+
+
+
+
+
+
+
+
+-> ETIQUETAS SEMANTICAS:
+
+nos permiten utilizar un código más entendible, tanto para los humanos como para los buscadores.
+
+1. HEADER
+2. NAV
+3. FOOTER
+4. SECTION
+5. ARTICLE
+6. EM 
+7. STRONG 
+
+
+
+
+1. HEADER
+
+nos sirve para generar la cabecera del documento, o incluso tambien para generar la cabecera de una seccion de contenido. 
+Tradicionalmente, aqui van cosas como el logotipo de la web, la barra de navegacion, los enlaces a las redes sociales o 
+incluso un pequeño campo de busqueda rapido.
+
+<header>
+    <!--logotipo -->
+    <!--barra de NAVegacion -->
+    <!-- barra de busqueda-->
+    <!-- enlace a redes sociales-->
+</header>
+
+
+
+
+2. NAV
+
+nos sirve para generar una barra de navegación, sea la navegacion principal o una navegacion alternativa. Dentro de esta 
+etiqueta, el arbol de navegacion se suele implementar a traves de listas desordenadas, elementos de lista y enlaces o 
+hipervinculos. 
+
+<nav> 
+    <ul> 
+        <li> <a href="#"> Inicio </a> </li>
+        <li> <a href="#"> ¿Quiénes somos? </a> </li>
+        <li> <a href="#"> Servicios </a> </li>
+        <li> <a href="#"> Contacto </a> </li>
+    </ul> 
+</nav>
+
+
+
+
+3. FOOTER
+
+Nos sirve para generar el pie de pagina de una pagina principal o el pie de pagina de una seccion de contenido. 
+
+<footer>
+
+    <p> todos los derechos reservados </p>
+
+   <nav>
+        <ul> <a href="#">Terminos y condiciones</a> </ul>
+        <ul> <a href="#">mapa de sitio</a> </ul>
+        <ul> <a href="#">información legal</a> </ul>
+    </nav>
+</footer>
+
+
+
+
+4. SECTION
+
+nos permite definir una buena seccion de contenido. Si quisieramos crear un breve apartado sobre un producto o servicio, 
+esta etiqueta seria una excelente opcion. Aqui tambien podemos utilizar las etiquetas de encabezado y pie de pagina. 
+
+<section>
+
+    <header>
+
+        <h2> Productos destacados </h2>
+
+        <!--contenido del producto -->
+
+        <footer>
+            <a href="#" > continuar leyendo ... </a>
+        </footer>
+</section>
+
+
+
+
+5. ARTICLE
+
+nos permite definir una pieza de contenido independiente. Contenido que podria funcionar por si solo sin la necesidad de 
+todo lo que lo rodea: un producto, un servicio, una noticia, etc. Generalmente lo vemos adentro de secciones, pero no es 
+obligatorio.
+
+<section>  <!-- productos destacados -->
+
+    <article>
+     <!--contenido del producto -->
+     </article>
+
+     <article>
+     <!--contenido del producto -->
+     <article>
+</section>
+
+
+
+
+6. EM
+Sirve para dar enfasis en forma de italica. Tiene un hermano mayor que es strong.
+<em>esto es un ejemplo</em>
+
+
+
+7. STRONG 
+Se utiliza para hacer negrita las plabras. El buscador lo intrepreta como palabra importante
+<strong> esto es un ejemplo</strong> 
+
+
+
+
+
+
+
+
+
+-> ELEMENTOS DE LINEA Y DE BLOQUE 
+
+
+
+
+1. DIV 
+2. SPAN 
+3. DISPLAY
+
+
+
+
+1. DIV 
+son etiquetas de bloque muy utilizadas. Ya que permiten generar divisiones en nuestro sitio. 
+
+<div> un elemento de bloque </div>
+<div> otro elemento de bloque </div>
+<div> un ultimo elemento de bloque  </div>
+
++---------------------------------------------------------------------------+
+-----------------------------------------------------------------------------
+|UN ELEMENTO DE BLOQUE                                                      |
+-----------------------------------------------------------------------------
++---------------------------------------------------------------------------+
+|OTRO ELEMENTO DE BLOQUE                                                    |
+----------------------------------------------------------------------------+
++---------------------------------------------------------------------------+
+|UN ELEMENTO DE BLOQUE                                                      |
++---------------------------------------------------------------------------+
+
+
+
+
+2. SPAN 
+Se suelen usar para contener porciones de texto y asi poder determinarle un estilo independiente al bloque de código al 
+que pertenecen.
+
+<span> unas  palabras </span>
+<span> otras palabras </span>
+<span> mas palabras por aqui </span>
++---------------------------------------------------------------------+
+|+--------------------+  +-------------------------+    +-----------+ |
+||UNAS PALABRAS       |  |OTRAS PALABRAS           |    |MAS PALA   | |
+|+--------------------+  +-------------------------+    +-----------+ |
+|+---------------------+                                              |
+||BRAS POR AQUÍ        |                                              |
+|+---------------------+                                              |
+|                                                                     |
++---------------------------------------------------------------------+
+                                                                      
+
+
+
+3. DISPLAY (en css)
+mediante esta propiedad podemos cambiar la disposicion del elemento que queramos. Los valores que recibe son, block, inline, inline-block y none
+
+ .en-linea{display: inline; }
+ .de-bloque {display: block; }
+ .de-bloque-en-linea {display: inline-block; }
+ .oculto {diplay: none; }
+
+
+· inline: define un elemento con comportamiento en linea. No recibe algunas propiedades del modelo de cajas. 
+
+· Block: Define un elemento con comportamiento de bloque. Puede recibir propiedades del modelo de cajas. 
+
+· inline-block: Define un elemento con compartiemiento de semi bloque. Puede recibir propiedades del modelo de caja y 
+  tambien comparte propiedades de elementos en linea. 
+
+· none: oculta un elemento. No lo elimina de la estructura HTML, solo desaparece de la vista.
+
+
+
+
+
+
+
+
+-> LISTAS 
+
+
+
+
+1. ORDENADAS 
+2. DESORDENADAS 
+3. ANIDADAS 
+
+
+
+
+1. ORDENADAS
+
+las listas ordenadas nos permiten enumerar items de manera consecutiva. Por defecto van a empezar en el numero 1 y
+se iran imcrementando con cada item nuevo.
+atributo star
+
+<ol type="X"> <!-- X= 1(numeros), A(letras), I(numeros romanos) -->          
+    <li> primer item</li>
+    <li> segundo item</li>
+</ol>
+
+<ol start="X"> <!-- X= cualquier valor -->          
+    <li> primer item</li>
+    <li> segundo item</li>
+</ol>
+
+
+
+
+2. DESORDENADAS
+
+nos permite listar items. Por defecto se genera viñeta bolita. 
+
+<ul type="X">  <!-- X=disc, circle, square, none  --> 
+    <li>  primer elemento de lista desordenada </li>
+    <li>  segundo elemento de lista desordenada </li>
+</ul>
+
+
+
+
+3. ANIDADADS
+
+Nos permiten crear varios niveles de jerarquia y organizacion. las podemos anidas como deseemos y generar los niveles que necesitemos. 
+Se anidan agregando un <ol> o <ul> al <li>.
+anido dentro del li
+
+
+<ul> 
+    <li> recordar para el viaje:
+        <ol>
+            <li>dni</li>
+            <li>pasajes</li>
+        </ol>
+    </li>
+    <li> llamar a asist card </li>
+    <li> adaptador para celular </li>
+</ul>
+
+
+
+
+
+
+
+
+-> ETIQUETAS DE TEXTO 
+
+
+
+
+1. CONFIGURACION DE CARACTERES 
+2. ETIQUETAS DE TEXTO
+
+
+
+
+1. CONFIGURACION DE CARACTERES
+
+Etiqueta <meta>  permite definir propiedades de la configuracion de la pagina. Se usa el atributo charset. 
+El valor debe ser utf-8
+
+<meta charset = "utf-8" >
+
+
+
+
+2. ETIQUETAS DE TEXTO 
+
+<!-- sintaxis de elemento -->
+    <h1>soy h1</h1>
+    <h2>soy h2</h2>
+    <h3>soy h3</h3>
+    <h4>soy h4</h4>
+    <h5>soy h5</h5>
+    <h6>soy h6</h6>
+    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Debitis quam sint dicta, ipsam excepturi repudiandae
+     reiciendis dolor iusto consequatur sunt cupiditate provident temporibus magni earum vel a officia aperiam fuga? </p>
+
+
+
+
+
+
+
+
+-> RUTAS, HIPERVINCULOS E IMAGENES  
+
+
+
+
+1. RUTAS
+2. HIPERVINCULOS O ENLACES 
+3. IMAGENES 
+
+
+
+
+1. RUTAS 
+
+·Absoluta: https://www.unsitioweb.com/imagenes/imagenes1.jpg
+·Relaiva: imagenes/iconos/unaimagen.jpg    <!-- USO ../ PARA SUBIR   / PARA BAJAR -->
+
+
+
+
+2. HIPERVINCULOS O ENLACES
+
+<a> </a>
+<a href= "https://www.google.com">google </a>  <!-- enlace externo Ruta absoluta-->
+<a href="inicio.html">Inicio</a> <--enlace interno. Ruta relativa-->
+
+
+#Anclas
+hacen referencia a un fragmento o elemento de la pagina. puede ser una seccion o un titular y pueden combinarse
+ con las anteriores. Inician con el caracter # y hacen referencia a la propiedad id. 
+<a href="#biografia">biografia</a>
+<a href="http://www.sitio.com/#contacto">contacto</a>
+<a href="nosotros.html#nuestro-equipo">nuestro equipo</a>
+
+
+correo y telefono 
+al hacer clic se abrira el programa de correo que tengamos como predeterminado para enviar un correo a esa
+direccion de email. 
+
+<a href="mailto@server.com">enviar mensaje</a>
+<a href="tel:12345678">telefono</a>
+
+Hipervinculo con imagen (si hago clic en la imagen me redirecciona)
+<a href="http://www.tutorialehtml.com/" title="HTML link image example">
+	<img alt="imagen html de ejemplo" src="/assets_tutorials/img/image.jpg" width="120" height="75" />
+</a>
+
+
+
+
+3.IMAGENES 
+
+Imagenes con texto alternativo: podemos agregar imagenes. img nos permite invocar obuscar las imagenes en el lugar donde esten alojadas. 
+width y height: ancho y alto. los valores pueden ser en px (solo escribimos el numero) o con el %. 
+
+<img width="30" height="30" src="img/fotoperfil.jpg" alt="tu imagen de perfil">
+
+
+
+
+
+
+
+
+->  ACCESIBILIDAD
+
+
+
+
+1.DISLEXIA
+2.PROBLEMAS COGNITIVOS
+3.PROBLEMAS MOTRICES
+4.DIFICULTADES AUDITIVAS
+5.DIFICULTADES VISUALES
+
+
+
+
+1. contenidos acompañados de ilustraciones y diagramas
+2. utilizacion de iconos representativos
+3. tamaño de botones adecuados, interactuar en el sitio con teclado y mouse
+4. videos con subtitulos
+5. transcripcion de audio, tamaño del texto amplio, utilizacion de contraste adecuado.
+
+
+
+
+
+
+
+
+-> BUENAS PRACTICAS
+
+
+
+
+· html, Utilizacion de encabezados, textos alternativos con imagenes, label en los formularios, enlaces descriptivos,
+ no resaltar contenido solo por colores. 
+
+
+
+
+· css, texto y fondo con imagenes  de contraste, utilizar medidas relativas de fuente, familia de texto alternativa, 
+utilizar media qu11eries para los dispositivos de salida.   
+
+
+
+
+
+
+
+
+-> ESTRUCTURA BASICA DE UN DOCUMENTO HTML
+
+   
+   
+   
+    <DOCTYPE HTML> //VERSION HTML
+    
+    <html> //inicio de pagina 
+    
+        <head> //configuracion de la pagina
+            <meta charset="utf-8">
+            <title>"titulo pestaña"</title>
+        </head>
+    
+    <body> //contenido de la pagina
+    lorem ipsum....
+    </body>
+    
+    </html>
+
+
+
+
+->VIEWPORTS 
+es la parte visible de cualquier navegador web, en la cual se puede ver el contenido de pagina sin tener que hacer scroll.
+es decir, es en donde se muestra el contenido de uestro documento html. 
+
+1.VIEWPORTS
+2.DEV TOOLS 
+
+
+1.VIEWPORTS 
+La etiqueta <meta> viewport da al browser instrucciones de cómo se debe dimensionar y escalar la página web al cargarse. 
+En el ejemplo a continuación presentamos la estructura básica de este tag. En ocasiones, puede que lo veamos con más información.
+(acomoda la pagina a la pantalla del celu otro dispositivo)
+EJ: 
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+
+2.Dev TOOLS
+·Las dev tools nos permiten inspeccionar el código de cualquier sitio y realizar modiﬁcaciones sobre el mismo. 
+Esos cambios solo los vemos nosotros de manera local. Una vez que refrescamos el sitio, todo vuelve a verse de la manera que estaba inicialmente.
+Para acceder a ellas podemos hacer click derecho y luego inspeccionar. También podemos acceder con F12 o Cmd+i.
+·También nos permiten darnos una idea de cómo se vería una determinada página en dispositivos con diferentes tamaños de pantalla, como puede ser 
+ una tablet o un celular.
+ ·Secciones de las dev tools:
+ barra de accesos rapidos y secciones de herramietas de desarrollador, doble clic en body permite editar, modelo de cajas y css.
+
+
+
+
+
+-> MEDIDAS RELATIVAS (EN CSS)
+Si queremos hacer que nuestros diseños  sean fluidas y se adapten facilmente a distintas resolucioens de pantalla, seguro vamos a necesitar de otro
+tipo de unidades de medida, mas exactamente medidas relaticas. 
+Una medida relativa es aquella que, dependiendo de su contexto podra variar y adaptarse, sin la necesidad que tengamos que cambiar nuestro codigo 
+la medida relativa mas comun es el %. Una medida porcentual toma una parte de una medida completa y, dependiendo de esa medida completa, la medida porcentual
+podria variar. 
+Las medidas relativas son aquellas que tienen en cuenta el contexto donde se encuentran. Si el contexto cambia, estas medidas cambiarán con él.
+
+El contexto
+Según de qué medida estemos hablando, el número que pongamos será relativo a:
+
+●	El contenedor padre.
+●	El tamaño de la fuente del sitio.
+●	El tamaño de la fuente del contenedor padre.
+●	El tamaño del viewport.
+
+Si tomamos los porcentajes como ejemplo, podemos decir que son una unidad relativa, puesto que 30% de ancho no será lo mismo para un elemento situado dentro de un contenedor de 2000px de ancho que para un contenedor de 1000px de ancho.
+
+
+
+1. PORCENTAJES 
+2. EM Y REM 
+3.VW Y VH 
+
+
+1.PORCENTAJES 
+Cualquier medida expresada en porcentaje siempre estará relacionada con la medida (en ese mismo eje) del elemento padre que la contiene. 
+Si el contenedor padre mide 300px de ancho y le asignamos un ancho del 50% al elemento interior, este medirá 150px (el 50% del ancho padre).
+Ojo: no se recomienda usar porcentajes para el alto de un elemento.
+EJ: (EN CSS)
+    .elementoContenedor { width: 300px }
+    .elementoInterior { width: 50% } // Será 150px
+
+Calculando el porcentaje
+Una buena herramienta para calcular o hacer el traslado de píxeles a porcentajes, es la regla de 3 simple. 
+Para cada elemento del contenedor padre, el cálculo sería: elemento hijo * 100 / elemento padre = porcentaje
+Entonces, si calculamos cada elemento, nos quedaría así: 
+300 * 100 / 1200 = 25%
+700 * 100 / 1200 = 58.33%
+200 * 100 / 1200 = 16.66%
+
+┌─────────────────┬─────────────────────────────────────────┬──────────────┐
+│                 │                                         │              │
+│   width:25%     │        width:58.33%                     │width:16.66%  │
+│                 │                                         │              │
+│                 │                                         │              │
+│                 │                                         │              │
+├─────────────────┴─────────────────────────────────────────┴──────────────┤
+│                                                                          │
+│                       width:1200px                                       │
+│                                                                          │
+│                       contenedor padre                                   │
+│                                                                          │
+└──────────────────────────────────────────────────────────────────────────┘
+
+
+2.EM Y REM 
+
+·EMS 
+Los ems son siempre relativos al elemento padre. Tomarán como valor de referencia la propiedad font-size.
+El punto de referencia inicial es el valor de font-size del elemento <html>, que por defecto es 16px. El resto de los elementos tendrán 1em de 
+font-size que equivale al mismo valor que tenga el padre.
+Si le asignamos 1.5em al font-size de cualquier elemento, el tamaño resultante será el valor del padre multiplicado por el valor en ems → 16px * 1.5 = 24px.
+EJ: 
+    p { font-size: 1.5em } // 16px * 1.5 = 24px
+
+
+Si utilizamos ems en una propiedad que no sea font-size, se tomará para el cálculo el font-size que tenga el elemento que estemos modiﬁcando.
+Por lo general, se utilizan este tipo de unidades para todo lo que sea relacionado a la tipografía, pero también podemos aplicarlo a otras propiedades como margin y padding para que varíen en función de los tamaños de las fuentes.
+EJ: p{
+        font-size: 20px;
+        line-height: 2em; // 20px * 2 = 40px 
+        padding: 1.5em; // 20px * 1.5 = 30px
+    }
+
+·CALCULANDO LOS EMS DE LOS ELEMENTOS 
+
+Por defecto <html> tendrá 16px en font-size y los demás elementos 1em. Por lo tanto, todos los elementos del sitio tendrán 16px de font-size.
+<html>  → font-size: 16px
+    <body>  → font-size: 1em → 16px
+        <div>	→ font-size: 1em → 16px
+            <p>	→ font-size: 1em → 16px
+                <strong>Hola!</strong>  → font-size: 1em → 16px
+            </p>
+        </div>
+    </body>
+</html>
+
+
+
+Si cambiamos el font-size del <div> a 2em, este tendrá 2 veces el tamaño del font-size de su padre. 
+Por lo tanto el <div> y todos sus hijos tendrán 32px de font-size.
+Por defecto <html> tendrá 16px en font-size y los demás elementos 1em. Por lo tanto, todos los elementos del sitio tendrán 16px de font-size.
+<html>  → font-size: 16px
+    <body>  → font-size: 1em → 16px
+        <div>	→ 2em → 16px * 2 → 32px
+            <p>	→ font-size: 1em → 32px
+                <strong>Hola!</strong>  → font-size: 1em → 32px
+            </p>
+        </div>
+    </body>
+</html>
+
+
+Teniendo en cuenta lo anterior, si a <p> le asignamos un font-size de 1.5em, el cálculo se hará en base al tamaño de su padre, el <div>: 32px * 1.5 = 48px.
+Nuevamente, todos los hijos de <p> heredarán ese tamaño de fuente.
+<html>  → font-size: 16px
+    <body>  → font-size: 1em
+         <div>	→ font-size: 2em → 32px
+            <p>	→ font-size: 1.5em → 32px * 1.5 → 48px
+                <strong>Hola!</strong>  → font-size: 1em → 48px
+            </p>
+        </div>
+    </body>
+</html>
+
+
+
+
+Si ahora cambiamos el font-size del elemento <html> a 10px, todos los elementos cambiarán de tamaño sin haber modiﬁcado directamente su font-size.
+<html>  → font-size: 10px
+    <body>  → font-size: 1em → 10px
+        <div>font-size: 2em → 20px
+            <p>	→ font-size: 1.5em → 30px
+                <strong>Hola!</strong>  → font-size: 1em → 30px
+            </p>
+        </div>
+    </body>
+</html>
+
+
+
+REM
+Como nos habremos dado cuenta, usar ems puede ser muy complicado.
+Los rems funcionan muy parecido a los ems, con la diferencia de que siempre tomarán de base el tamaño de font size del elemento <html>.
+Eso quiere decir que el tamaño expresado en rems no modiﬁcará el de los elementos hijos y tampoco se verá afectado por el del elemento padre.
+Por lo general, es mejor usar rems en lugar de ems ya que conservamos las ventajas de una unidad relativa, pero nos evitamos hacer cálculos 
+complejos y estar pendientes de cómo se afectan los elementos entre sí. 
+EJ: 
+    p { font-size: 1.5rem }
+
+
+Calculando los rems de los elementos
+Teniendo en cuenta lo anterior, podemos asignar distintos valores a los elementos sin que estos afecten a los otros. Todos los elementos tomarán de base el tamaño de font-size del elemento <html>.
+<html>  → font-size: 16px
+    <body>  → font-size: 2rem → 16px * 2 → 32px
+        <div>	→ font-size: 3rem → 16px * 3 → 48px
+            <p>	→ font-size: 1rem → 16px
+                <strong>Hola!</strong>  → font-size: 0.5rem → 16px * 0.5 → 8px
+            </p>
+        </div>
+    </body>
+</html>
+
+
+
+3. VW Y VH
+
+Medidas de viewport
+El viewport es el espacio visible que tiene el navegador para mostrar el sitio. Eso quiere decir que se pueden utilizar medidas relativas a este espacio para poder determinar el tamaño de ciertos elementos.
+
+Viewport width y viewport height
+vw o viewport width es relativo al ancho total del viewport.
+vh o viewport height es relativo al alto total del viewport.
+Ambas medidas están expresadas como porcentajes del total, eso quiere decir que 50vh será equivalente al 50% del alto disponible en el viewport.
+EJ: 
+    div {
+        width: 25vw; // 25% del ancho disponible     
+        height: 50vh; // 50% del alto disponible
+    }
+
+
+Visualizando vh y vw
+Cualquier medida expresada en viewport width (vw) o viewport height (vh) tomará siempre como referencia al viewport del documento.
+
+                                  ▼
+        width: 25vw; // 25% del ancho disponible     
+        height: 50vh; // 50% del alto disponible
+
+
+┌─────────────────▲─────────────────┐
+│                 │                 │
+│               1 │                 │
+│               0 │                 │
+│               0 │                 │
+│               v │                 │
+│               h │                 │
+│                 │      100vw      │
+│◄────────────────┼────────────────►│
+│                 │                 │
+│                 │                 │
+│                 │                 │
+│                 │                 │
+│                 │                 │
+│                 │                 │
+│                 │                 │
+└─────────────────▼─────────────────┘
+
+
+
+
+
+
+
+
+->MEDIA QUERIES 
+
+1. MEDIA QUERIES 
+2. ESTRATEGIAS DE DISEÑO 
+
+
+
+1. MEDIA QUERIES 
+Son un conjunto de reglas de CSS que nos permiten cambiar los estilos de los elementos en función de las características del dispositivo que esté visualizando nuestro sitio.
+La mayor parte de nuestros estilos estará fuera de las media queries. Dentro de cada media query escribiremos solo aquello que necesitemos ajustar para ese tamaño de viewport.
+Por lo general, se escriben al ﬁnal de nuestra hoja de CSS.
+EJ: (HTML)
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+MIN-WIDTH
+Al especiﬁcar min-width estamos diciendo: “si como mínimo el viewport tiene N píxeles de ancho, apliquemos estas reglas”.
+Similar a decir → “Desde este ancho, hacia arriba”.
+EJ (CSS)
+
+    @media (min-width: 460px){
+        body {
+                background: red;
+             }
+    }
+
+MAX-WIDTH
+Al especiﬁcar min-width estamos diciendo: “si como mínimo el viewport tiene N píxeles de ancho, apliquemos estas reglas”.
+Similar a decir → “Desde este ancho, hacia arriba”.
+
+EJ: (CSS)
+
+    @media (max-width: 768px){
+        body {
+                background: yellow;
+             }
+    }
+
+
+
+ORIENTACION 
+Al especiﬁcar la orientación (portrait o landscape) estamos diciendo: “si como máximo el viewport tiene N píxeles de ancho y además el dispositivo está en posición vertical/horizontal, apliquemos estas reglas”.
+EJ: (CSS)
+    @media (max-width: 460px) and (orientation: landscape){
+      body {  
+          background: blue;
+      }
+    }
+
+
+
+
+
+
+
+
+
+
+
+2. ESTRATEGIAS DE DISEÑO
+
+Mobile first (EN CSS) RECOMENDADO
+Si utilizamos mobile ﬁrst como estrategia de diseño, la idea es determinar de manera general las reglas CSS para pequeñas pantallas para luego, a través de media queries, ir aclarando el comportamiento en viewports más grandes.
+EJ: 
+
+body {
+    background: red;
+}
+@media (min-width: 460px){
+    /* Tablets */
+}
+@media (min-width: 768px){
+
+/* Laptop */
+}
+
+
+
+Mobile last (NO RECOMENDADO)
+Si utilizamos mobile last como estrategia de diseño, la idea es determinar de manera general las reglas CSS para grandes pantallas para luego, a través de media queries, ir aclarando el comportamiento en viewports más pequeños.
+EJ:
+    body {
+    background: red;
+}
+@media (max-width: 768px){
+    /* Tablets */
+}
+@media (max-width: 460px){
+    /*SMARTPHONES*/
+}
+
+
+
+Los breakpoints
+Llamamos breakpoints o puntos de quiebre a cada salto de tamaño sobre el cual aplicamos una media query. 
+No hay una regla ﬁja sobre cuáles usar, pero acá dejamos los más utilizados.
+
+0-480:smartphone mas pequeños
+481-768: smartphones mas grandes y Tablets
+769-1279:laptops, tablets grandes en su modo apaisado y pequeñas computadoras de escritorio
+1280+ : computadoras de escritorio mas grandes y monitores
+
+
+
+
+
+
+
+
+->FORMULARIOS 
+Son elementos de html que nos permiten pedirle datos al usuario que luego podremos validar y procesar.
+
+Capturar con html
+Validar con javascript y Node.js 
+Procesar con Node.js 
+
+
+2. Elementos del formulario
+A. form
+B. input
+C. label
+D. textarea
+E. Select
+F. option 
+G. button 
+
+
+A.FORM  
+Con esta etiqueta indicamos que vamos a crear un formulario en nuestro documento HTML. Todows los elemetnos que queremos 
+incluir en el formulario van a ir dentro de las etiquetas: <form> </form>
+Atrbutos:
+·action= Define la ruta en donde se va a procesar la informacion capturada.
+·method= Define como se enviara la informacion. (GET o POST)
+Ej:  <form action="/registro" method:"POST"> <!-- AQUI VAN LOS CAMPOS--> </form>
+
+
+B. INPUT 
+Es un elemento multifuncion. Cambiando el valor del atributo type, podemos obtener distintos tipos de campos. El atributo name 
+identifica el campo y lo diferencia de los demas campos. Es importante saber que los elementos que no tengan name, no se envian. 
+EJ: 
+    <form action="/registro" method:"POST"> 
+    <input type="text" name="usuario">
+    <input type="password" name="clave">
+    <input type="email" name="email">
+    <input type="tel" name="telefono">
+    <input type="number" name="edad"> 
+    </form>
+
+
+
+C. LABEL 
+Sirve para asociar texto descriptivo a un campo determiando.
+for: este atributo asocia el label con un campo por su propia id. 
+id del campo: para que el campo quede asociado, el campo a asociar debe poseer un id con el mismo valor que se uso en el for del label. 
+contenido: Contiene el texto que vamos a mostrar. Si el usuario hace clic en el texto, el cursor ira al campo asociado. 
+Por lo general, cada campo o grupo de campos tendra su label asociado. Cuando el usuario haga clic en el label, se activara
+automaticamente el campo que corresponda. 
+EJ: 
+    <label for="nombre">Nombre: </label>
+    <input type="text" name="nombre" id="nombre">
+
+EJ 2: <form action="/registro" method="POST">
+        <label for="nombre">Nombre:</label>
+        <input type="text" name="nombre" id="nombre">
+
+        <label for="nombre">Email:</label>
+        <input type="email" name="email" id="email">
+        
+        <label for="nombre">Edad:</label>
+        <input type="tel" name="edad" id="telefono">
+    </form>
+
+
+
+D. TEXTAREA
+Los anteriores textos estan pensados para una sola linea de texto. El textarea permite texto de gran tamaño y con multiples lineas.
+A diferencia del input, el textarea tiene etiqueta de apertura y cierre.
+EJ:
+    <form action="/contact" method="POST">
+        <label for="comentario">deje su comentario:</label>
+        <textarea name="comentario" id="comentario">Contenido</textarea>
+    </form>
+
+
+
+E. SELECT 
+Nos permite agregar un componente que muestra opciones. Como el resto de los campos, debe llevar un parámetro name para enviarse.
+EJ:
+    <form action="/colors" method="GET">
+        <label>seleccione un color:</label>
+        <select name="color">
+            <option value="#ff0000">Rojo</option>
+            <option value="#00ff00">Verde</option>
+            <option value="#0000ff">Azul</option>
+            <option value="#770077">Morado</option>
+        </select>
+    </form>
+
+
+
+F. OPTION 
+las opciones de un select son representadas por elementos option. Los elementos option tienen etiqueta de apertura y cierre. 
+EJ: 
+    <option value="#ff0000" selected>Rojo</option>
+    <option value="#00ff00">Verde</option>
+
+    value=#... es el valor que sera enviado al formulario
+    selected=.... es opcional se encarga de preselecciona la opcion.
+    >Verde< = contenido de la opcion
+
+
+
+
+G. BUTTON 
+Nos permite generar un botton. Con la propiedad type definimos el tipo. 
+· Un boton de tipo reset reinicia el formulario a su estado inicial. 
+· Un boton tipo submit se encarga de enviar el formulario. 
+· Un boton de tipo button no realiza ninguna accion por defecto. Por lo general, programaremos con javascript.
+
+EJ: 
+    <form action="" method="">
+        <label for="usuario">Ingrese el usuario:</label>
+        <input type="text" name="usuario">
+
+        <button type="reset">Cancelar</button>
+        <button type="submit">Enviar</button>
+    </form>
+
+
+
+· Ejemplo de formulario
+<form action ="/login" method="POST">
+    <p>
+        <label>Nombre:</label>
+        <input type="text" name="usuario">
+    </p>
+    <p>
+        <label>Email:</label>
+        <input type="email" name="email">
+    </p>
+    <p>
+        <button type="submit">Enviar</button>
+    </p>
+</form>
+
+
+
+
+
+->RADIO Y CHECKBOX
+
+1. RADIO BUTTONS
+2. CHECKBOXES
+
+
+· Si asignamos el atributo checked a un elemento de tipo input, ya sea radio button o checkbox, este va a aparecer ya seleccionado por defecto.
+
+
+
+1.RADIO BUTTON
+En los radio buttons, al hacer click en O, este se queda seleccionado. Para crear un elemento de tipo radio usamos un input cuyo atributo type tiene el valor
+radio.  Podemos agrupar elementos de tipo radio y, en ese caso, solo se podra elegir una opcion del conjunto. Para agruparlos usamos para todos los eleemtnos 
+el mismo valor en el atributo name. 
+EJ: 
+    <input type="radio" name="medio-de-pago" value="efectivo">
+    <input type="radio" name="medio-de-pago" value="debito">
+    <input type="radio" name="medio-de-pago" value="tarjeta">
+
+name= Para que el usuario pueda seleccionar sola una opcion tenemos que asignarle el mismo nombre a todos los inputs de tipo radio que sean del mismo grupo. 
+
+checked= es opcional, se encarga de preseleccionar la opcion.
+
+type= crea un boton de tipo radio
+
+value= aca va la informacion que se enviara si el usuario selecciona este radio button.
+
+
+
+2. CHECKBOXES
+Representa una opcion ■, al hacer clic en el queda queda seleccionado y con otro clic quitamos la seleccion. Para crear un elemento de tipo checkbox usamos un 
+input cuyo atributo type tiene el valor checkbox. Podemos agrupar elementos de tipo checkbox y, se podran elegir multiples opciones del conjunto. Para agruparlos,
+todos los elementos deben tener el mismo valor en el atributo name.  
+EJ:
+    <input type="Checkbox" name="hobbies" value="Música">
+    <input type="Checkbox" name="hobbies" value="Pintura">
+    <input type="Checkbox" name="hobbies" value="juegos">
+
+
+name= Para que el usuario pueda seleccionar sola una opcion tenemos que asignarle el mismo nombre a todos los inputs de tipo radio que sean del mismo grupo. 
+
+checked= es opcional, se encarga de preseleccionar la opcion.
+
+type= crea un boton de tipo checkbox
+
+value= aca va la informacion que se enviara si el usuario selecciona este radio button.
+
+
+
+·Uso particular de checkbox
+es utilizarlo para recolectar informacion que responde a preguntas con respuesta como si/no porque permite tildar o destildar en un solo elemento.
+En ese caso no es necesario agregar un valor, ya que. en caso de seleccionarse la opcion, llegara con el valor ON.
+EJ:
+    <label for="terminos">Acepto los términos.</label>
+    <input type="checkbox" name="terminos">
+
+EJ2:
+    <label for="newsletter">¡Quiero ese newsletter!</label>
+    <input type="checkbox" name="newsletter">
+
+
+
+
+->FORMULARIOS AVANZADOS
+
+·Input de fecha
+nos permite ingresar una fecha incluyendo año, mes y dia. 
+Para crear una elemento de tipo date usamos un input a cuyo atributo type le damos el valor date. Dentro de los atributos del elemento, la fecha siempre 
+se formatea como aaaa-mm-dd. Por fuera se tomara el formato que corresponda segun el idioma del usuario. 
+EJ: 
+    <input type="date" name="fecha">
+
+Propiedades y sus valores:
+
+<input type="date" name="fecha" value="2021-07-22" min="2018-01-01" max="2022-12-31">
+       ───────────              ────────────────── ───────────────  ────────────────
+       ·crea un input           ·si necesitamos     ·es opcional. Nos  ·Es opcional. Definimos
+       de tipo date              mostrar una fecha   permite mostrar    la fecha maxima
+                                 por defecto         definir la fecha
+                                 usamo el atributo   minima que puede
+                                 value               ser ingresada.
+
+┌───────────────────────────────────────────────┐
+│                                               │
+│    mm/dd/aaaa                               ▼ │
+│                                               │
+│                                ┌──┐ ┌──┐ ┌──┐ │
+│     April 2017   ▼             │ ◄│ │ x│ │► │ │
+│                                └──┘ └──┘ └──┘ │
+│                                               │
+│  ┌─────┬────┬─────┬─────┬─────┬─────┬──────┐  │
+│  │ mon │tue │ wed │thu  │ fri │ sat │ sun  │  │
+│  ├─────┼────┼─────┼─────┼─────┼─────┼──────┤  │
+│  │ 27  │ 28 │  29 │ 30  │ 31  │  1  │   2  │  │
+│  │     │    │     │     │     │     │      │  │
+│  │ 3   │  4 │   5 │  6  │   7 │  8  │   9  │  │
+│  │     │    │     │     │     │     │      │  │
+│  └─────┴────┴─────┴─────┴─────┴─────┴──────┘  │
+│                                               │
+└───────────────────────────────────────────────┘
+
+
+
+
+
+·Input de archivos
+Nos permite cargar uno o mas archivos desde una computadora. Para crear un elemento de tipo file usamos un input a cuyo atributo type le damos 
+el valor file. 
+EJ:
+    <label>Seleccionar una imagen para el perfil:</label> 
+    <input type="file" name="avatar" accept=".jpg" multiple>
+
+type= crea un input de tipo file 
+accept= nos permite definir que tipo de archivos seran aceptados. 
+multiple= por defecto solo permite un archivo, si desearamos aceptar mas de uno usamos multiple.
+
+┌───────────────────────────────────────────────┐
+│                                               │
+│    seleccionar una imagen para el perfil:     │
+│                                               │
+│                                               │
+│                                               │
+│  ┌────────────────┐                           │
+│  │ choose files   │      no file chosen       │
+│  └────────────────┘                           │
+│                                               │
+└───────────────────────────────────────────────┘
+
+
+
+
+-> FORMULARIOS ACCESIBLES
+
+1. Etiquetas label
+2. Etiquetas de agrupamiento
+3. Campos obligatorios
+4. Tabulaciones y selecciones por teclado
+
+
+1. ETIQUETAS LABEL
+situar correctamente las etiquetas label antes del campo(text, textarea,select,password,file)
+·arriba del campo
+·a la izquierda del campo
+
+                    nombre
+                 ┌───────────────────┐
+                 │                   │
+                 └───────────────────┘
+
+
+
+                 ┌────────────────────┐
+direccion de     │                    │
+correo electro   │                    │
+nico             └────────────────────┘
+
+
+
+
+detras del campo para:
+checkbox (multiseleeccion)
+radio button (excluyente)
+
+┌───┐
+│   │ uno                           O uno
+└───┘
+
+┌───┐
+│   │ dos                           O dos
+└───┘
+
+
+
+
+Etiquetar los controles de forma correcta
+label for
+La relación entre la etiqueta y el control del formulario al que pertenece  debe estar siempre asociada con for.
+Ej (html)
+<label for="fname">Nombre</label>
+<input id="fname" type="text" name="nombre">
+
+
+for debe ser siempre igual al id del control del formulario y cada id debe ser único.
+
+Label no debe usarse para los campos:
+●	Image, como puede ser el caso de un botón enviar, en estos elementos utilizamos el atributo alt.
+●	Para los tipos submit y reset debemos usar value.
+●	Para los button en los que su contenido se usa como una etiqueta.
+
+
+2. ETIQUETAS DE AGRUPAMIENTO 
+
+Utilizamos las etiquetas de agrupamiento cuando sea necesario y/o aclaratorio, por ejemplo:
+
+●	Agrupamos semánticamente un número de controles del formulario mediante el campo ﬁeldset, como en una agrupación de opciones de radios o checks.
+●	Añadimos una descripción a esta agrupación con el elemento legend.
+●	Con optgroup podemos agrupar una serie de options dentro de un select. Con este elemento ayudamos a los usuarios a encontrar la información de 
+    una forma más simple, sobre  todo en listas muy largas.
+
+FIELDSET
+nos permite agrupar cuando haya varios elementos de formulario asociados . Cada ﬁeldset debe tener una legend (es el texto que describe el grupo de 
+asociados de los elementos de formulario.)
+EJ: (HTML)
+    <fieldset>
+      <legend>Tipo de equipo</legend> <br />
+      <input id="pc" type="radio" name="rb3" value="radiobutton">
+      <label for="pc">PC</label><br />
+      <input id="linux" type="radio" name="rb3" value="radiobutton">   
+      <label for="linux">Linux</label><br />
+    </fieldset>
+
+
+
+OPTGROUP 
+· optgroup nos permite agrupar las opciones de selección de una lista de un formulario.
+· label es obligatorio en este elemento y debería proveer a los usuarios una pista o descripción acerca de los contenidos del grupo.
+LA AGRUPACION DE OPCIONES EN UN CONTROL SELECT PUEDE MEJORAR LA LEGIBILIDAD Y LA FACILIDAD DE USO.
+EJ: (HTML) 
+    <p> Elije un auto:
+    <select>
+        <optgroup label="Ferrari">
+        <option>458 Spider</option>
+        <option>F12 Berlinetta</option> 
+        <option>California T</option>
+      </optgroup>
+      <optgroup label="Porsche">
+        <option>Macan</option>
+        <option>918 Spyder</option>    
+      </optgroup>
+     </select> 
+    </p>
+
+
+
+
+3. CAMPOS OBLIGATORIOS 
+
+·Identificacion correcta de los campos obligatorios
+
+forma recomenda:
+·Poniendo directamente el texto “obligatorio” vamos a evitar más confusiones en la interpretación. 
+ Por ejemplo, “Email (obligatorio)”.
+·Identiﬁquemos los errores marcando el foco con cambio de color en el campo que se ha producido, y además describiendo con texto el error cometido.
+·Probemos por ejemplo con “El email que completaste no es correcto, por favor, introduce algo similar a mimail@gmail.com”.
+
+
+
+
+Forma No recomendada
+·Usar  el * para indicar que un campo es requerido. Se debe añadir el texto “Los campos con * son obligatorios” o similar ( no es tan recomendado)
+·No identiﬁquemos un campo obligatorio solo con color. Esto podría no funcionar para las personas con daltonismo.
+·No es útil “Se han dejado campos obligatorios sin completar”. Con este tipo de mensaje es complicado que el usuario sepa en qué ha fallado.
+
+
+
+
+4. Tabulacion y seleccion por teclado 
+
+Tabindex
+Una de las formas más comunes de la navegación a través de un formulario es utilizando la tecla Tab.
+Una persona llena un campo, presiona la tecla Tab, rellena el campo siguiente, y así sucesivamente, hasta que se alcanza el ﬁnal del formulario. 
+Para lograrlo debemos establecer el orden en que se asignan esas tabulaciones de la siguiente manera:
+EJ: (HTML)
+<a href="documento2.html" tabindex="2" style="float: right;"> Segundo documento.</a>
+<a href="documento1.html" tabindex="1">Primer documento.</a>
+
+
+●	Un número entero que indica la posición del elemento en la navegación por tabulación. Si varios elementos comparten el mismo tabindex, 
+    su orden relativo sigue la posición relativa en el documento.
+●	Si el valor es negativo (usualmente tabindex="-1"), el elemento se encontrará excluido de la navegación por tabulación.
+●	Si este atributo es omitido, el navegador determinará automáticamente la posición de todos los elementos capaces de recibir el enfoque 
+    
+    
+    
+    de acuerdo a su posición en el código.

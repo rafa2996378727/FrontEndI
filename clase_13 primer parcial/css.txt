@@ -1,0 +1,1639 @@
+css = cascading style sheet o hoja de datos en cascada 
+
+
+
+-> link de vinculacion html  con css
+se coloca dentro del head de html. La carpeta debe llamarse estilos 
+<link href="css/estilos.css" rel="stylesheet">
+
+
+
+
+
+
+-> regla css
+
+conjunto de instrucciones que se aplican a un elemento determinado de html para agregarle estilos. 
+selector { propiedad: valor; }
+
+
+
+
+
+
+-> propiedades css
+
+tipografias     visualizacion       fondos            comportamiento
+ (FONT)           responsive       (BACKGROUND)
+
+tamaños         interfaz        posicionamiento      otros
+(SIZE)                             (POSITION)
+                                  
+
+
+
+
+-> selectores
+
+1. ID
+2. CLASE
+3. ETIQUETA 
+4. COMBINADOS 
+5. DESCENDENTES 
+
+
+1. ID
+este selector va a atrapar el elemento html que tenga asignado el atributo id con el valor correspondiente.
+Utilizar nombres unicos para cada elemento y no repetirlos.
+
+html:
+<h3 id="saludo"> ¡hola! </h3>
+
+css:
+#saludo { propiedad: valor; } EJ: #saludo { color: blue; } 
+
+
+
+
+2. CLASE:
+va a atrapar al elemento html que tenga asignado el atributo class con el valor correspondiente. 
+podemos asignarle la cantidad de clases que queramos a un mismo elemento. para hacerlo solo hace falta separarlas con un epacio
+
+html
+<h3 class="noticia destacada">una noticia</h3>
+
+css
+.noticia { propiedad: valor; } EJ: .noticia { font-size: 22px; }
+
+
+
+
+3.ETIQUETA
+este selector va a atrapar al elemento html con el mismo nombre de etiqueta que llamaremos desde nuestro css
+
+html
+<p>palabras</p>
+
+css
+p { propiedad: valor; } EJ: p {color: red; }
+
+
+
+
+4. COMBINADOS:
+son la combinacion de los dos anteriores. Podemos usar varios selectores del mismo tipo. 
+
+ej: selector de etiqueta con selector de clase
+
+html
+<h2 class="subtitulo">un subtitulo</h2>
+
+css
+h2.subtitulo { propiedad:valor;} EJ h2.subtitulo { color: yellow; }
+
+
+
+
+5. DESCENDIENTES:
+sirven para agregar especifidad. Atrapamos al elemento li que esta dentro de ul con id lista 
+
+html
+<ul id="lista">
+    <li>primer item</li>
+</ul>
+
+css
+ul#lista li { text-aligne: center; }
+
+ACLARACION: css prioriza los selectores mas especificos para aplicar los estilos 
+
+
+
+
+
+
+
+
+-> FUENTES
+
+1. FONT-FAMILY (tipo de letra. Ej arial)
+2. FONT-SIZE (tamaño de letra. Ej 23px)
+3. FONT-STYLE (estilo de la letra. Ej normal) 
+4. FONT-WEIGHT (peso de la tipografia. mas fina o mas gruesa. Ej bold)
+5. TEXT-ALIGNE (Alineacion. Ej justify)
+6. TEXT-DECORATION (subrayado. Ej underline)
+7. LINE-HEIGHT (Interlineado. Ej 20px)
+
+
+1.Font Family
+Permite elegir la familia tipografica que queremos usar. 
+para que funcione la tipografia debe existir en la computadora del usuario o usar una webfont. 
+podemos poner mas de una tipografia, separando las adicionales por comas. en caso que la primera no este se carga la segunda.
+
+p { font-family: Arial, sans-serif; }
+
+
+
+
+2. font-size 
+tamaño tipografico 
+p { font-size: 23 px; } 
+
+
+
+
+3. font-style 
+define el estilo de la tipografia. Recibe los valores italic, normal y oblique.
+<em> valor por defecto italic
+
+italic
+normal
+oblique
+
+p  { font-style: normal; }
+
+
+
+
+4. font-weight
+peso de la tipografia. bold, lighter, normal. o tmb en numeros.
+
+p { font-weight: 500; }
+
+
+
+
+5. text-align
+alineacion de texto. left, right, inherit, justify.
+p { text-align: justify; }
+
+
+
+
+6. text-decoration (subrayado)
+line-through 
+underline
+overline
+none
+
+p { text-decoration: underline ;}
+
+
+
+
+7. line-height 
+alto de cada linea de texto o interlineado. 
+
+p { line-height: 500; }
+
+
+
+
+
+
+->colores
+
+1. Formato de colores
+2. colores de texto
+3. color de fondos
+4. opacidad
+
+
+1. formato de colores
+nombre, hexadecimal, rgb, rgba
+
+nombre purple
+hexa #f05331 
+rgb(255,100,50)
+rgba(122,50,125,0.5) 0.5=opacidad; 0=transparente
+
+
+
+
+2. color de texto:
+p { color: blue ; }
+
+
+
+
+3. color de fondo 
+El atributo backgrund permite asignarle un color de fondo a un elemento. puede aplicarse
+cualquier formato de colores.
+
+p { background-color: [ red, #3459ff, rgb(12, 34, 32), rgba(0,0,0,0) ; }
+
+
+
+4. transparencia al elemento
+transparencia al elemento html.
+
+p { opacity: 0.5 ; }
+
+
+
+
+
+
+->INSPECTOR DE PROPIEDADES 
+
+Se puede acceder pulsando F12 o clic derecho inspeccionar. Para editar el documento html, hacemos clic derecho en alguna etiqueta y ponemos editar como html. La vista estilos muestra todos los estilos creados, incluidos aquiellos que no se admiten o que no son validos. Esto puede ayudarnos a entender porque cdiertos estilos no se estan aplicando. Tambien encontraremos en que linea  y documento css se encuentra esa regla. 
+
+
+
+
+
+
+->BUENAS PRACTICAS
+
+· Crear primero la estructura html. 
+
+· Comentar cada seccion del documento.
+
+· nombrar correctamente los selectores: No comenzar el nombre de los selectores en mayuscula, numeros ni caracteres especiales. 
+
+· separar las palabras mediante guiones o mediante mayúsculas: elegir una unica manera de escribir el nombre de los  selectores.
+Ej 1: .nombre-clase{ color: orange; }
+Ej 2: .nombreClase{ color: orange; }
+
+·Utilizar nombres descriptivos en los selectores.
+Ej:  .nav-button {background: blue; }
+
+·NO utlizar como nombre de un selector una caracteristica visual.
+Ej:  .menu-red { background: red; }  MAL
+    .nav-menu { background-color: red; } BIEN
+
+·Combinar elementos. Los elementos de una hoja de estilos a veces comparten propiedades.
+Ej: h1, h2, h3 {font-family: Arial; Font-weight: 700; }
+
+·Utilizar varias clases. A veces es beneficio agregar varias clases a un elemento.
+Ej: <div class="box right"></div>
+
+·Orden de declaración: Resulta mucho mas comodo usar el orden alfabetico para poder buscar luego una propiedad.
+Ej: #menu-nav  {color: #fff; float: left; font-weight: bold; height: 200px; margin: 0; padding: 0; width: 150 px;} 
+
+
+
+
+
+
+-> FONDOS 
+
+1. COLORES DE FONDO
+2. IMAGENES DE FONDO 
+
+1. Colores de fondo
+nos permite asignarle un color al fondo de un elemento. la propiedad se llama background
+el formato puede ser rgb, rgba, hexa o nombre.
+Ej. p { background-color: red; }
+
+
+2. IMAGENES DE FONDO
+ A. BACKGROUND-IMAGE
+ B. BACKGROUND-REPEAT 
+ C. BACKGROUND-POSITION 
+ D. BACKGROUND-ATTACHMENT 
+ E. BACKGROUND-SIZE 
+
+
+A. BACKGROUND-IMAGE
+Nos permite asignar una imagen de fondo a un elemento, definiendo la ruta a traves de la URL. la propiedad se llama background-image
+Ej. body {background-image: url ('../img/bici.jpg'); } 
+
+
+B. BACKGROUND-REPEAT
+Nos permite controlar si la imagen se va a repetir y de que manera.
+Ej: body {background-repeat: x;}   x= repeat, no repeat, repeat-x, repeat-y, round, space. 
+
+
+C. BACKGROUND-POSITION
+Nos permite mover la imagen dentro del elemento y decidir donde colocarla. Recibe valores en px, porcentajes y orientaciones. podemos asignarle dos valores, el primero para el eje x y el segundo para el eje y.
+Ej: body {background-position: right top; }
+
+
+D. BACKGROUND-ATTACHMENT
+Nos permite establecer si la imagen de fondo se va a mover junto con la pagina al hacer scroll o si se va a quedar fija. Recibe valores:
+fixed, 
+scroll,
+inherent, 
+initial
+Ej. body { background-attachment: fixed; }
+
+
+E. BACKGROUND-SIZE
+Nos permite establecer el tamaño de la iamgen de fondo. Recibe valores: 
+contain
+cover
+inherit
+tambien tamaños en px y porcentajes. Indicando el primer valor el ancho y con el segundo el alto
+Ej: body { background-size: 130 px; }
+
+
+
+
+
+-> FUENTES GENERICAS Y GOOGLE FONTS
+
+1. FUENTES SEGURAS
+2. FUENTES WEB 
+3. IMPLEMENTACION 
+
+
+1. FUENTES SEGURAS
+es el conjunto de familias tipograficas que pueden ser usadas en cualquier pagina web sin problemas porque estan preinstaladas.
+brush script mt, courier new, arial, verdana, georgia, tahoma, trebuchet MS, time new roman, garamond, helvetica, etc.
+las familias genericas son: serif, sans-serif, monospace, cursive, fantasy.
+
+ej: p{font-family: arial, verdana, garamond; } si no tiene instalada la primera, usa la segunda o la tercera. 
+
+
+2. FUENTES WEB
+Las fuentes web no siempre estan presintaladas y por lo tanto deben ser descargadas del navegador. Algunos ejemplos de fuentes web incluyen open sans y roboto de google asi como acumin o cortado de adobe fonts.
+
+
+3. Implementación
+independiente del tipo de fuente que utilicemos
+una vez definida la fuente ya se le pueden aplicar las propiedad.
+Ej: body { font-family:'Open Sans', sans-serif; }
+
+
+
+
+
+-> USO DE ICONOS
+Los iconos son imagenes que se utilizan para representar objetos o acciones. Al igual que con los fonts web, es necesario en primer lugar seleccionar la libreria de iconos que vamos a utilizar. 
+librerias: FontAwsome, Iconic, Material Design.
+Incluimos el enlace dentro del <head>.
+
+<link rel="stylesheet" href="https://use.fontawsome.com/releases/v5.15.2/css.all.css">
+
+insertamos el icono seleccionado en el lugar del body que mas nos guste:
+<i class="fas fa-exclamation-triangle"></i>    
+
+
+
+
+
+-> MODELO DE CAJAS
+
+Lo que propone este modelo es que pensemos a cada elemento como una caja, la cual posee 4 costados (arriba, derecha, abajo, izquierda)y a su vez puede ser afectado por:
+· el ancho y el alto
+· el relleno entre sus costados y el contenido
+· el ancho, grosor y tipo de linea de sus bordes.
+· el distanciamiento entre los demas elementos que lo rodean.
+
+
+1.MODELO DE CAJAS 
+2.WIDHT Y HEIGHT (ancho y alto)
+3.PADDING (relleno)
+4.PROPIEDADES ABREVIADAS
+5.BORDER (bordes)
+6.MARGIN (margenes)
+7.BOX-SIZING
+
+
+1. MODELO DE CAJAS
+Cada caja se compone de contenido, relleno, bordes y margenes. Mediante css podemos manipular todas esas propiedades para cambiar la 
+apariencia de cada elemento. A su vez, estas ropiedades pueden aplicarse de manera diferente a los cuatro lados de caja caja. Muchas
+de las propiedass solo aplican a elementos de bloque o semibloque. 
+
+
+
+
+
+
+                      TOP
+  ┌────────────────────────────────────────┐
+  │  MARGIN                                │
+  │                                        │
+  │   ┌───────────────────────────────┐    │
+  │   │ BORDER                        │    │
+  │   │                               │    │
+  │   │   ┌──────────────────────┐    │    │
+  │   │   │  PADDING             │    │    │
+  │   │   │    ┌────────────┐    │    │    │
+  │   │   │    │CONTENT     │    │    │    │
+L │   │   │    │            │    │    │    │R
+E │   │   │    │            │    │    │    │I                                                      
+F │   │   │    │            │    │    │    │G
+T │   │   │    │            │    │    │    │H
+  │   │   │    │            │    │    │    │T
+  │   │   │    │            │    │    │    │
+  │   │   │    │            │    │    │    │
+  │   │   │    │            │    │    │    │
+  │   │   │    │            │    │    │    │
+  │   │   │    └────────────┘    │    │    │
+  │   │   │                      │    │    │
+  │   │   └──────────────────────┘    │    │
+  │   │                               │    │
+  │   └───────────────────────────────┘    │
+  │                                        │
+  └────────────────────────────────────────┘
+                BOTTOM
+
+
+         TOP
+  ┌──────────────┐
+  │              │
+L │              │ R
+E │   ELEMENTO   │ I
+F │              │ G
+T │     HTML     │ H
+  │              │ T
+  └──────────────┘
+       BOTTOM
+
+
+
+
+2. WIDTH Y HEIGHT 
+· Si un elemento de bloque no tiene declarada la propiedad width, el ancho sera igual a su 100% de su padre contenedor.  En css Podemos 
+asignarle un valor a esta propiedad usando cualquier unidad de medida, como % o px.
+Ej: div { width: 120 px; }
+
+· Si un elemento no tiene declarado la propiedad height, el alto sera igual a la altura que le proporcione su contenido.  Sea un elemento
+de bloque o de linea. Se le asigna un valor usando medida de px. No se recomienda usar %. 
+Ej: div { height: 130px }
+
+Ejemplo:
+div { width: 130px; height: 120px; }
+
+  ▲  ┌──────────────┐
+H │  │              │
+E │  │              │ 1
+I │  │              │ 2
+G │  │    BLOQUE    │ 0
+H │  │              │ P
+T │  │              │ X
+  ▼  └──────────────┘
+
+     ◄──────────────►
+        WIDTH 130PX
+
+
+
+
+3.PADDING
+Es una propiedad y Es el espacio de relleno que podemos agregar entre el contenido del elemento y su borde. Podemos asignarle un valor
+a esta propiedad usando cualquier unidad de medida, como px, indicando 1 valor para los 4 lados de la caja.
+
+div { padding: 12px ;} -> los 4 lados tienen 12 px
+div { padding: 12px 20px ;} -> top-bottom=12px    left-right:20px
+div { padding: 12px 20px 18px ;} -> top=12px     left-right=20px    bottom=18 px
+div { padding: 12px 15px 18px 21px ;} top right bottom left 
+
+
+   ▲ ┌───────────────────┐            ▲ ┌───────────────────┐
+   │ │  PADDING 12PX     │            │ │    PADDING 12PX   │
+   │ │   ┌───────────┐   │            │ │   ┌───────────┐   │
+H  │ │   │ BLOQUE    │   │          H │ │   │           │   │
+E  │ │ 12│           │12 │          E │ │ P │           │P  │
+I  │ │   │           │   │          I │ │ 20│  BLOQUE   │20 │
+G  │ │   │           │   │          G │ │   │           │   │
+H  │ │   └───────────┘   │          H │ │   └───────────┘   │
+T  │ │   PADDING 12 PX   │          T │ │    PADDING 12PX   │
+   ▼ └───────────────────┘            ▼ └───────────────────┘
+
+     ◄───────────────────►                  ◄───────────────►
+              WIDTH                            WIDHT
+
+
+
+
+4. PROPIEDADES ABREVIADAS
+Muchas propiedades se pueden aplicar especificamente a uno de los costados de la caja. Tanto en padding como margin vale lo siguiente: 
+
+
+
+            1 valor            2 valores           3 valores                4 valores
+              A                   A                    A                        A
+        ┌───────────┐       ┌────────────┐       ┌─────────────┐          ┌────────────┐
+        │           │       │            │       │             │          │            │
+        │  padding  │       │  padding   │       │   padding   │          │  padding   │
+       A│           │A     B│            │B     B│             │B       D │            │ B
+        │    a      │       │   a,b      │       │   a,b,c     │          │  a,b,c,d   │
+        │           │       │            │       │             │          │            │
+        └───────────┘       └────────────┘       └─────────────┘          └────────────┘
+             A                     A                    C                      C
+
+
+
+
+
+5. PROPIEDADES BORDER
+Hace referencia al borde del elemento. Se ubica entre el relleno y el margen. Podemos asignarle mas de un valor: 
+div { border: estilo_de_linea espesor color ;} Ej: div { border: solid 3px yellow ;} 
+
+estilos de linea: solid, dotted, dashed, double.
+espesor: cualquier unidad de medida.
+color: cualquier formato.
+
+         BORDER: 3PX
++------------------------+
+|+----------------------+|
+||     PADDING          ||
+||  +----------------+  ||
+||  |                |  ||B
+||  |                |  ||O
+||  |                |  ||R
+||  |    BLOQUE      |  ||D
+||  |                |  ||E
+||  |                |  ||R
+||  +----------------+  ||
+||                      ||
+|+----------------------+|
++------------------------+
+
+
+
+
+6. MARGIN
+Hace referencia al margen exterior. Sirve para separar una caja de la otra. Utiliza cualquier undiad de medida. Y se aplica igual que a padding. (ver arriba)
+Ej: div {margin: 15px }
++----------------------------+
+|                            |
+|  +----------------------+  |
+|  |                      |  |
+|  |  +----------------+  |  |
+|  |  |                |  |  |
+|  |  |  +----------+  |  |  |
+|  |  |  |          |  |  |  |
+|  |  |  | content  |  |  |  |
+|  |  |  |          |  |  |  |
+|  |  |  +----------+  |  |  |
+|  |  |    padding     |  |  |
+|  |  +----------------+  |  |
+|  |       border         |  |
+|  +----------------------+  |
+|         margin: 15px       |
++----------------------------+
+
+
+
+
+7. BOX-SIZING
+Para calcular el ancho o el alto total de un elemento, tenemos que sumar todas las propiedades que vimos antes. La propiedad BOX-SIZING nos ayuda. 
+por defecto su valor es CONTENT-BOX. Y el comportamiento sera el de aplicarle el ancho y alto que definamos al contenido del elemento.
+
+    +----------------------------+
+    |                            |
+    |  +----------------------+  |
+    |  |                      |  |
+    |  |  +----------------+  |  |
+h   |  |  |                |  |  |
+e ^ |  |  |  +----------+  |  |  |
+i | |  |  |  |          |  |  |  |
+g | |  |  |  | content  |  |  |  |
+h | |  |  |  |          |  |  |  |
+t v |  |  |  +----------+  |  |  |
+    |  |  |    padding     |  |  |
+    |  |  +----------------+  |  |
+    |  |       border         |  |
+    |  +----------------------+  |
+    |         margin             |
+    +----------------------------+
+             <--------->
+               width
+
+
+·BORDER-BOX
+se puede cambiar el valor por defecto a BORDER-BOX. El ancho y el alto que le indiquemos tomara en cuenta el contenido, el padding y el border. Dejando solo el margin afuera. Es una buena practica asginarle box-sizing a todos los elementos del sitio, de la siguiente forma:
+* {box-sizing: border-box}  -> debe ser la primer linea de css.
+
+    +----------------------------+
+    |                            |
+  ^ |  +----------------------+  |
+  | |  |                      |  |
+  | |  |  +----------------+  |  |
+h | |  |  |                |  |  |
+e | |  |  |  +----------+  |  |  |
+i | |  |  |  |          |  |  |  |
+g | |  |  |  | content  |  |  |  |
+h | |  |  |  |          |  |  |  |
+t | |  |  |  +----------+  |  |  |
+  | |  |  |    padding     |  |  |
+  | |  |  +----------------+  |  |
+  | |  |       border         |  |
+  v |  +----------------------+  |
+    |         margin             |
+    +----------------------------+
+       <--------------------->
+               width
+
+
+EJ:
+    +----------------------------+
+    |                            |
+  ^ |  +----------------------+  |
+  | |  |                      |  |
+  | |  |  +----------------+  |  |       div {
+h | |  |  |                |  |  |            width: 150px;
+e | |  |  |  +----------+  |  |  |            height: 130px;
+i | |  |  |  |          |  |  |  |            padding: 12px;
+g | |  |  |  | content  |  |  |  |            border: solid 3px yellow;
+h | |  |  |  |          |  |  |  |            margin: 15px; (de cada lado)
+t | |  |  |  +----------+  |  |  |            box-sizing: border-box;
+  | |  |  |    padding     |  |  |           }
+  | |  |  +----------------+  |  |
+  | |  |       border         |  |
+  v |  +----------------------+  |
+    |         margin             |
+    +----------------------------+
+    <---------------------------->
+               width=180px
+                15+150+15
+
+
+
+
+
+
+-> POSITION 
+
+1. INTRODUCCION AL POSICIONAMIENTO 
+2. POSICIONAMIENTO RELATIVO 
+3. POSICIONAMIENTO ABSOLUTO
+4. POSICIONAMIENTO FIJO
+
+
+1. INTRODUCCION AL POSICIONAMIENTO
+Nos permite trasladar un elemento desde su posicion original a una nueva posicion. Tambien nos permite superponer elementos.
+> Puntos de referencia: cuando desplazamos un elemento tomando un costado como referencia:
+  · empujamos si el numero es positivo.
+  · tiramos si el numero es negativo.
+
+
+
+2. POSICIONAMIENTO RELATIVO
+Nos permite trasladar un elemento desde su posicion original a una nueva posicion. El punto de referencia seran sus costados.
+Al posicionar la caja 1 de manera relativa, el espacio que ocupaba originalmente seguira ocupado. Significa que los elementos que 
+estan a su lado no van a ser afectados por esta modificacion.
+Se utiliza cuando queremos desplazar un elemento sin modificar el flujo original de los demas que estan a su lado. 
+·EJ: .caja-1 {position: relative; left: 100px; top: 50px; }
+
+
+                 |                               |
++----------+     |                               |
+|          |     |                +-----------+  |
+|          |     |                |           |  |    +-----------+  ^---------------------------------- ^
+|    1     |     |                |           |  |    |           |  |       20 px                       |
+|          |     |                |           |  |    |           |  v +-------------+        40px       |
+|          |     |                |     1     |  |    |    a      |    |             |                   |
++----------+     |         +------+---+       |  |    |           |    |             |   +-------------+ v
+|          |     |         |      |   |       |  |    |           |    |      b      |   |             |
+|          |     |         |      +---+-------+  |    |           |    |             |   |             |
+|    2     |     |         |          |          |    +-----------+    |             |   |      c      |
+|          |     |         |   2      |          |                     +-------------+   |             |
+|          |     |         |          |          |                                       |             |
++----------+     |         +----------+          |                                       +-------------+
+                 |                               |
+                 |                               |
+                 |                               |
+
+
+
+
+3.POSICIONAMIENTO ABSOLUTO
+Nos permite trasladar un elemento tomando como referencia los costados del body. Los puntos de referencia seran
+los costados del body. Cuando movemos un elemento de manera absoluta, el espacio que ocupaba quedara vacio y otros
+elementos podran ocuparlo. 
+Ej: .caja-2{ position: absolute; right: 100px; bottom: 50px; }
+
+
+· POSITION RELATIVE + POSITION ABSOLUTE 
+Si nuestras cajas (hijas) estan dentro de otra (padre), el punto de referencia seguira siendo el body a menos que hagamos
+relativa la posicion de su padre. Se aplica cuando queremos sacar un elemento del flujo normal y posicionarlo en un punto
+fijo con respecto a su contenedor o body.
+
+EJ:     div {postion: relative; }
+    .caja-2 {position: absolute; right: 100px; top: 50px; }
+
+                                           aplicando position
++-----------------------------+      +-------------------------+
+|                             |      |                         |
+|                             |      |                         |
+|                             |      |  +-------+              |
+|   +------+                  |      |  |       |              |
+|   |      |                  |      |  |   1   |              |
+|   |   1  |                  |      |  |       |              |
+|   |      |                  |      |  +-------+              |
+|   +------+                  |      |  |       |              |
+|   |      |                  |      |  |       |              |
+|   |   2  |                  |      |  |   3   |              |
+|   |      |                  |      |  |       |              |
+|   +------+                  |      |  +-------+              |
+|   |      |                  |      |              +------+   |  ^
+|   |   3  |                  |      |              |      |   |  |
+|   |      |                  |      |              |  2   |   |  |  100 px
+|   +------+                  |      |              |      |   |  |
+|                             |      |              +------+   |  v
+|                             |      |                         |
++-----------------------------+      +-------------------------+
+                                                    <------>
+                                                      50 px
+
+
+            +-->  position: absolute
+            |
+            |
+      +-----+--+
+      |LOGO    |
++-----+--------+---------------------+
+|     |        |                     |
+|     +--------+                     |
+|                                    |
+|                                    |
+|                                    |
+|        LOREM IPSUM                 |
+|                                    |
+|                                    |
+|     BLA BLA BLA BLA ....           |
+|                                    +-->position: relative
+|                                    |
+|                                    |
+|                                    |
+|                                    |
+|                                    |
+|                                    |
+|                                    |
++------------------------------------+                                                      
+
+
+
+
+4. POSICIONAMIENTO FIJO
+Nos permite trasladar un elemento tomando como referencia la ventana del navegador. Los puntos de referencia seran los costados
+de la ventana del navegador. Sin importar que hagamos scroll en la pagina, el elemento siempre se mantendra fijo con respecto
+a la ventana del navegador. (pj el icono de wapp). Se utiliza cuando queremos que el elemento siga al usuario a medida que 
+navega en el sitio.
+
+Ej: .botonFucsia {position: fixed; right: 50px; bottom: 50px; }
+
+
+
+
+
+-> POSICIONAMIENTO STICKY
+Puede considerarse hibrido de los posicionamientos relativos y fijo. Un elemento con posicionamiento sticky es tratado como un
+elemento posicionado relativamente hasta que cruza un umbral especificado, en cuyo punto se trata como fijo hasta que alcanza 
+el limite de su padre. (EJ cuando hacemos scroll para bajar el elemento baja y queda sobre la barra de navegacion ) 
+
+selector {propiedad1: valor1 ; propiedad2: valor 2; }  propiedad1: position valor1= sticky    propiedad 2 top, left, right bottom  valor2= 50px 
+
+
+
+-> Z-INDEX 
+Nos permite cambiar el orden de las "capas" dentro de un documento html. Es decir, controla como se apilan las capas. Podemos considerar que
+cada elemento esta en una capa diferente y que esas capas van en el orden en que aparecen los elementos en html. SOLO PODEMOS MODIFICAR Los
+ELEMENTOS QUE TENGAN POSITION: RELATIVE, ABSOLUTE O FIXED.
+
++--------------+
+|              |         <div class="caja-1">1</div>
+|      1       |
+|              |         <div class="caja-2">2</div>
++--------------+
+|              |         <div class="caja-3">3</div>
+|      2       |
+|              |
++--------------+
+|              |
+|      3       |
+|              |
++--------------+
+
+
+Ej: 
+
+                                                                                          -----------------+                                             
+                                                                                          |                |                                             
+                                                                                          |                |                                             
+               +------------------+                                                       |       1        |                                             
+               |                  |                                                       |                |                                             
+               |                  |                                                       |                |                                             
+               |       1          |                                             +---------------+          |          .caja-1 {   }                      
+ |-------------|                  |       caja-1{position: relative;            |               ------------                                             
+ |             |                  |              left: 100px;                   |               |                     .caja-2 { position: relative;      
+ |             +------------------+              top: 50px;                     |     2         |                               z-index: 10;             
+ |      2           |                            }                              |               |                             }                          
+ |                  |                                                           |               |                                                        
+ |                  |                                                           |               |                                                        
++-------------------+                                                           ----------------|                si le agregamos el valor 10 a la caja 2 
+|                   |                                                           |               |                se movera delante del resto ya que ahora
+|                   |                                                           |               |                tiene un valor mayor.                   
+|       3           |                                                           |    3          |                                                        
+|                   |                                                           |               |                                                        
+|                   |                                                           |               |                                                        
++-------------------+                                                           |               |                                                        
+                                                                                +---------------+                                                        
+
+
+
+
+
+
+
+->INTRODUCCION A FLEX-BOX
+Es una metodologia de css que permite maquetear un sitio web utilizando una estructura de filas y columnas. Propone un unico
+flujo, en el que dispondremos de los elementos con mayor libertad para distribuir, redimensionar y reordenar cada uno de 
+ellos en funcion de ese flujo de trabajo.
+
+1.EJES EN FLEX-BOX
+2.FLEX-DIRECTION 
+3.JUSTIFY-CONTENT
+4.ALIGN-ITEM 
+5.ALIGN-CONTENT 
+
+
+1. EJES EN FLEX-BOX
+Flex-box trabaja con dos ejes para desarrollar todo su flujo interno: el eje X y el eje Y. Segun como ordenemos los elementos, llamaremos 
+main axis a uno y cross axis a otro. Definiendo el eje principal de nuestro contenedor flex estamos determinando el flujo que tendran 
+los elementos dentro del contenedor. En funcion del principal los elementos se distribuyen en filas o en columnas. 
+
+       +------------------+                    +--------------------+
+c a |  |                  |                  | |                    |
+r x |  |   +----+---+     |              m a | |  +-----+           |
+o i |  |   | 1  | 2 |     |              a x | |  |  1  |           |
+s s |  |   +----+---+     |              i i | |  +-----+           |
+s   |  |                  |              n s | |  |  2  |           |
+    v  +------------------+                  | |  +-----+           |
+                                             | |                    |
+       --------------->                      v +--------------------+
+        main axis
+                                                --------------->
+                                                   cross axis
+
+
+
+
+2. relatIRECTION
+Con esta propiedad definimos el main axis (eje principal) del contenedor, que puede ser tanto horizontal como vertical. El cross axis es 
+transversal al main axis. El contenedor ROW (fila) viene por defecto
+flex-direction: ROW               // los items se disponen de izquierda a derecha
+flex-direction: row-reverse       // los items se disponen en el eje x, de derecha a izquierda
+flex-direction: columnas          // los items se disponen en el eje y, de arriba hacia abajo
+flex-direction: column-reverse    //los items de disponen en el eje y, de abajo hacia arriba. Se invierte el inicio y fin de main axis
+
+
+   ┌──────────────────┐       ┌──────────────────┐
+   │                  │       │                  │
+   │  ┌──┬─────┬───┐  │       │  ┌──┬─────┬───┐  │
+   │  │  │     │   │  │       │  │  │     │   │  │
+   │  │1 │ 2   │ 3 │  │       │  │3 │ 2   │ 1 │  │
+   │  └──┴─────┴───┘  │       │  └──┴─────┴───┘  │
+   │                  │       │                  │
+   └──────────────────┘       └──────────────────┘
+
+   ─────────────────►          ◄────────────────
+
+
+   ┌────────────┐
+   │            │
+ │ │  ┌─────┐   │
+ │ │  │  1  │   │
+ │ │  ├─────┤   │
+ │ │  │  2  │   │
+ │ │  ├─────┤   │
+ │ │  │  3  │   │
+ │ │  └─────┘   │
+ ▼ │            │
+   └────────────┘
+
+
+
+    ┌────────────┐
+  ▲ │            │
+  │ │  ┌─────┐   │
+  │ │  │  3  │   │
+  │ │  ├─────┤   │
+  │ │  │  2  │   │
+  │ │  ├─────┤   │
+  │ │  │  1  │   │
+  │ │  └─────┘   │
+    │            │
+    └────────────┘
+
+  
+
+
+3. JUSTIFY-CONTENT
+Flex-box nos da dos propiedades para alinear facilmente los elementos. A traves de del main axis con justify-content.
+A traves del cross axis con align-items.
+  A. justify-content: flex-start        //respecto al incio del main axis
+  B. justify-content: flex-end          //respecto al final del main axis
+  C. justify-content: center            //en el centro
+  D. justify-content: space-between     // espacio entre medio 
+  E. justify-content: space-around      // espacio entre medio y en los bordes 
+
+
+  
+  A. justify-content: flex-start  (valor por defecto) //se alinean respecto del inicio del main axis
+     +----------------------------------------+           
+     |                                        |           
+     +---------|--------|---------+           |           
+     |         |        |         |           |           
+     |         |        |         |           |           
+     |    1    |  2     | 3       |           |           
+     |         |        |         |           |           
+     |         |        |         |           |           
+     +---------|--------|---------+           |           
+     |                                        |           
+     +----------------------------------------+           
+                                                          
+     ------------------------------>                       
+                                                          
+ start                             end         
+
+
+
+ B. justify-content: flex-end    //  Se alinean respeto del final del main axis que hayamos definido. 
+
+ +--------------------------------------+
+|                                      |
+|         +---------|--------|---------+
+|         |         |        |         |
+|         |         |        |         |
+|         |   1     |   2    |   3     |
+|         |         |        |         |
+|         |         |        |         |
+|         +---------|--------|---------+
+|                                      |
++--------------------------------------+
+                                        
+          <------------------------------
+                                        
+
+C. justify-content: center                                       
+los items se alinena en el medio del main axis
++------------------------------------------------+
+|                                                |
+|         +---------|--------|---------+         |
+|         |         |        |         |         |
+|         |         |        |         |         |
+|         |   1     |   2    |   3     |         |
+|         |         |        |         |         |
+|         |         |        |         |         |
+|         +---------|--------|---------+         |
+|                                                |
++------------------------------------------------+
+                                                  
+          ------------------------------>
+
+
+D. justify-content: space-between
+los items se distribuyen de manera uniforme. El primer item es enviado al inicio del main axis, y el ultimo al final.           
+                                                  
++------------------------------------------------+
+|                                                |
++----------+        +----------+       +---------+
+|          |        |          |       |         |
+|          |        |          |       |         |
+|     1    |        |    2     |       |    3    |
+|          |        |          |       |         |
+|          |        |          |       |         |
++----------+        +----------+       +---------+
+|                                                |
++------------------------------------------------+
+                                                  
+          ------------------------------>
+
+
+E. JUSTIFY-CONTENT: SPACE-AROUND 
+los items se distribuyen de manera uniforme. El espacio libre se repartira entre todos los elementos.          
+
++------------------------------------------------+           
+|                                                |           
+| +--------+        +----------+       +-------+ |           
+| |        |        |          |       |       | |           
+| |        |        |          |       |       | |           
+| |   1    |        |    2     |       |    3  | |           
+| |        |        |          |       |       | |           
+| |        |        |          |       |       | |           
+| +--------+        +----------+       +-------+ |           
+|                                                |           
++------------------------------------------------+           
+                                                             
+          ------------------------------>
+
+
+
+
+4. ALIGN-ITEMS 
+Con esta propiedad alineamos los items a lo largo del corss axis. Por defecto: STRETCH. En otras palabras los items ocuparan 
+todo el espacio disponible en el cross-axis. El valor por defecto es stretch, es decir los items ocuparan todo el espacio disponible en el cross axis.
+
+·stretch
+·flex-start
+·flex-end
+center
+
+
+
+
+            flex-start
+     ┌──┬────┬────┬────┬───┬───┬──┐
+     │  │    │    │    │   │   │  │
+  │  │  │    │    │    │   │   │  │
+c │  │  │    │    │    │   │   │  │
+r │  │  │  v │    │ r  │   │ v │  │
+o │  │  │  i │    │ o  │   │ e │  │
+s │  │  │  o │    │ j  │   │ r │  │
+s │  │  │  l │    │ o  │   │ d │  │
+  │  │  │  e │    │    │   │ e │  │
+a │  │  │  t │    │    │   │   │  │
+x │  │  │  a │    │    │   │   │  │
+i │  │  │    │    │    │   │   │  │
+s ▼  │  │    │    │    │   │   │  │
+     │  │    │    │    │   │   │  │
+     └──┴────┴────┴────┴───┴───┴──┘
+            flex-end
+
+
+
+·align-items:stretch 
+
+se ajustan para abarcar todo el contenedor. Si cross axis es vertical, se ajustan en columna. Si cross axis
+es horizontal se ajustan en fila. 
+            flex-start
+     ┌──┬────┬────┬────┐
+     │  │    │    │    │
+  │  │  │    │    │    │
+c │  │  │    │    │    │
+r │  │v │  r │ v  │    │
+o │  │i │  o │ e  │    │
+s │  │o │  j │ r  │    │
+s │  │l │  o │ d  │    │
+  │  │e │    │ e  │    │
+a │  │t │    │    │    │
+x │  │a │    │    │    │
+i │  │  │    │    │    │
+s ▼  │  │    │    │    │
+     │  │    │    │    │
+     └──┴────┴────┴────┘
+            flex-end
+
+
+
+·align-items:flex-start
+los items alinean al inicio del cross-axis.
+            flex-start
+     ┌────┬─────┬───┬──┐
+     │    │     │   │  │
+  │  │  1 │ 2   │3  │  │
+c │  ├────┴─────┴───┘  │
+r │  │                 │
+o │  │                 │
+s │  │                 │
+s │  │                 │
+  │  │                 │
+a │  │                 │
+x │  │                 │
+i │  │                 │
+s ▼  │                 │
+     │                 │
+     └─────────────────┘
+            flex-end
+
+
+·align-item:flex-end
+los items se alinean al final del eje transversal.
+                           flex-start
+                    ┌─────────────────┐
+                    │                 │
+                 │  │                 │
+               c │  │                 │
+               r │  │                 │
+               o │  │                 │
+               s │  │                 │
+               s │  │                 │
+                 │  │                 │
+               a │  │                 │
+               x │  │                 │
+               i │  │                 │
+┼              s ▼  ├───┬─────┬───┐   │
+                    │ 1 │ 2   │3  │   │
+                    └───┴─────┴───┴───┘
+                           flex-end
+
+·align-items:center
+los items se alinean al centro del eje transversal.
+            flex-start
+     ┌─────────────────┐
+     │                 │
+  │  │                 │
+c │  │                 │
+r │  │                 │
+o │  │                 │
+s │  ├───┬─────┬───┐   │
+s │  │ 1 │ 2   │3  │   │
+  │  ├───┴─────┴───┘   │
+a │  │                 │
+x │  │                 │
+i │  │                 │
+s ▼  │                 │
+     │                 │
+     └─────────────────┘
+            flex-end
+
+
+
+5.Align-content
+Si tenemos un contenedor de una sola linea (donde flex-flow se establece como no-wrap) utilizaremos align-item,
+pero en el caso de que estemos trabajando con contenedores multimedia debemos utilizar align-content.
+Con esta propiedad alineamos los items a lo largo del cross axis cuando los contenedores flexibles incluyen de varias lineas (donde flex-flow se establece en wrap o wrap-reverse)
+Los valroes que admite align-content son similares a align-item
+                                                             
+                                                                                                     
+                                                                                                   
+              flex-start                
+     ┌─────┬────┬─────┬─────┐      ┌────────────────────┐
+c  │ │ 1   │ 2  │  3  │  4  │  c │ │                    │
+r  │ │     │    │     │     │  r │ │                    │
+s  │ ├─────┼────┼─────┴─────┤  o │ │                    │
+s  │ │     │    │           │  s │ ├─────┬───┬────┬─────┤
+a  │ │ 5   │  6 │           │  s │ │  1  │ 2 │3   │4    │
+x  │ ├─────┴────┘           │  a │ ├─────┼───┼────┴─────┤
+i  │ │                      │  x │ │  5  │6  │          │
+s  │ │                      │  i │ │     │   │          │
+   ▼ └──────────────────────┘  s ▼ └─────┴───┴──────────┘
+                                          flex-end
+
+
+
+·align content: center | stretch
+
+             center                       stretch
+     ┌──────────────────────┐      ┌─────┬───┬────┬─────┐
+c  │ │                      │  c │ │     │   │    │     │
+r  │ ├─────┬────┬─────┬─────┤  r │ │     │   │    │     │
+s  │ │  1  │ 2  │  3  │  4  │  o │ │     │   │    │     │
+s  │ ├─────┼────┼─────┴─────┤  s │ │  1  │ 2 │3   │4    │
+a  │ │     │    │           │  s │ ├─────┼───┼────┴─────┤
+x  │ │ 5   │  6 │           │  a │ │  5  │6  │          │
+i  │ ├─────┴────┘           │  x │ │     │   │          │
+s  │ │                      │  i │ │     │   │          │
+   ▼ └──────────────────────┘  s ▼ └─────┴───┴──────────┘
+
+
+
+   ·align-content:space-between | space-around
+
+             space-between              space-around
+    ┌─────┬─────┬─────┬─────┐      ┌───────────────────┐
+c │ │  1  │  2  │ 3   │  4  │  c │ │                   │
+r │ │     │     │     │     │  r │ ├─────┬────┬───┬────┤
+s │ ├─────┴─────┴─────┴─────┤  o │ │  1  │  2 │ 3 │ 4  │
+s │ │                       │  s │ ├─────┴────┴───┴────┤
+a │ │                       │  s │ │                   │
+x │ │                       │  a │ ├─────┬─────┐       │
+i │ ├────┬─────┐            │  x │ │  5  │   6 │       │
+s │ │    │     │            │  i │ ├─────┴─────┘       │
+  ▼ │  5 │  6  │            │  s ▼ │                   │
+    └────┴─────┴────────────┘      └───────────────────┘
+
+
+
+
+  
+
+ ->Estructura basica de felxbox
+ Flex-box propone una estructura basada  en el uso de un contenedor padre (flex-container) y sus elementos hijos (flex-items)
+Tenemos que definir un flex-container. Para eso usarmos la propiedad display con el valor flex. De esta forma, estamos 
+habilitando un contexto flex, para trabajar con los hijos directos del elemento. La propiedad display tambien puede recibir el
+valor inline-flex.
+
+.contenedor-padre {display:flex;}
+
+
+ETRUCTURA BASICA.
+Cuando hablamos de un flex-container, hablamos de un elemntos html que contiene a uno o mas elementos. A estos elementos anidados los llamamos flex-items.
+En el flex container es en donde configuramos la mayoria de las propiedades flex.
+┌──────────────────────────┐
+│                          │
+│    ┌───┐ ┌───┐ ┌───┐     ├──► Flex-container
+│    │ 1 │ │ 2 │ │3  │     │
+│    │   │ │   │ │   ├─────┼──► flex-items
+│    └───┘ └───┘ └───┘     │
+│                          │
+└──────────────────────────┘
+
+
+
+
+·Flex-wrap
+Flex-wrap con el valor wrap permitira que los items tomen el ancho definido y que los que no entren en la linea, caigan a la 
+siguiente.  Flex-wrap tambien puede recibir los valores nowrap y wrap-reverse.
+
+
+por defecto, los elementos hijos de un contenedor flex van a tratar de entrar todos en una misma línea.
+
+┌───────────────────────────────────────┐
+│                                       │
+│  ┌──┐ ┌────┐ ┌──┐ ┌───┐ ┌────┐ ┌──┐   │
+│  │  │ │    │ │  │ │   │ │    │ │  │   │
+│  │  │ │    │ │  │ │   │ │    │ │  │   │
+│  │  │ │    │ │  │ │   │ │    │ │  │   │
+│  └──┘ └────┘ └──┘ └───┘ └────┘ └──┘   │
+│                                       │
+└───────────────────────────────────────┘
+
+para aclararle al contenedor que debemos respetar el ancho definido de sus hijos usamos la propiedad flex-wrap con el valor wrap. 
+flex-wrap: wrap; 
+┌───────────────────────────────────────┐
+│                                       │   .contenedor-padre {
+│  ┌────┐    ┌────┐    ┌─────┐  ┌────┐  │
+│  │    │    │    │    │     │  │    │  │      display:flex;
+│  └────┘    └────┘    └─────┘  └────┘  │
+│                                       │      flex-wrap:wrap;
+│  ┌────┐    ┌────┐    ┌────┐  ┌─────┐  │
+│  │    │    │    │    │    │  │     │  │    }
+└──┴────┴────┴────┴────┴────┴──┴─────┴──┘
+
+
+
+
+·Flex-items
+Un flex-item a su vez, puede convertirse en un flex-container. Para eso, solo hace falta asignarle la regla display:flex, 
+para que asi sus elementos hijos pasen a ser flex-items. 
+
+.elemento-hijo {
+
+  display:flex;
+}
+                                          
+                                          
+
+
+
+->PSEUDO SELECTORES 
+
+1. Pseudo selectores
+2. Pseudo clases
+3. Pseudo elementos
+
+
+1. Pseudo selectores
+Los pseudo selectores nos permiten una manera alternativa de crear elementos y de aplicar estilos en función de los estados y organización de los elementos.
+
+Se dividen en dos grandes grupos: 
+·Pseudo clases que nos permiten aplicar estilos en función de: 
+  -Los estados de los elementos.
+  -La ubicacion dentro de la estructura HTML.
+  -La presencia de ciertos atributos de html.
+·Pseudo elementos que nos permiten crear elementos desde CSS sin tener que modiﬁcar la estructura del HTML.
+
+
+2. Pseudo clases 
+Las pseudo clases se agregan a los selectores que ya conocemos.
+Normalmente escribiremos el nombre del selector primero, seguido de dos puntos : y la pseudo clase que queramos utilizar.
+Algunas pseudo clases se pueden aplicar a cualquier elemento HTML, mientras que otras solamente se aplican a elementos especíﬁcos.
+  
+  A. Pseudo clases de los enlaces
+  B. :LINK 
+  C. :VISTED 
+  D. :HOVER 
+  E. :ACTIVE 
+  F. Pseudo clases de los inputs
+  G. :FOCUS 
+  H. :DISABLED 
+
+
+
+
+
+
+EJ: 
+    selector:pseudo-clase {
+      propiedad: valor;
+    }
+
+
+·A. pseudo clases de los enlaces
+Los enlaces son uno de los elementos que tienen pseudo clases especíﬁcas. En este caso serán :link , :visited, :hover y :active
+EJ:
+    a:link,
+    a:visited {
+      color: rgb(98, 8, 194);     
+      font-weight: bold
+    }
+
+
+    a:hover, 
+    a:active {
+      color:rgb(136, 11, 74);
+    }
+
+
+
+B.  :LINK
+Se utiliza para aplicar estilo a los enlaces <a></a> que tengan la propiedad href. Los estilos deﬁnidos por la pseudoclase :link serán anulados
+por cualquier pseudo clase posterior relacionada con el enlace (:visited, :hover o :active) que tenga al menos la misma especiﬁcidad.
+EJ: 
+   a:link {
+   background-color: rgb(234, 0, 255);     
+   border-color: rgb(161, 17, 89);     
+   color: red;  
+   }
+
+
+C.  :VISITED 
+Se utiliza para aplicar estilo a los enlaces <a></a> que han sido visitados al menos una vez por parte del usuario.
+Sus estilos también podrán ser anulados por el resto de los pseudo selectores de enlaces.
+
+EJ:
+   a:visited {
+     background-color: rgb(234, 0, 255); 
+     border-color: rgb(161, 17, 89);     
+     color: red;
+   }
+
+
+D. :HOVER
+Si bien este pseudo selector está relacionado con los enlaces, puede ser aplicado a cualquier otro elemento de HTML.
+Se utiliza para aplicar estilo a cualquier elemento sobre el cual el usuario posicione el cursor.
+Si se aplica a un enlace, sus estilos también podrán ser anulados por el resto de los pseudo selectores de enlaces.
+
+EJ: 
+    a:hover {
+      background-color: gold;
+    }
+
+
+E. :ACTIVE
+Se utiliza para aplicar estilo a los enlaces <a></a> que estén siendo cliqueados por el usuario. Normalmente se utiliza para la animación del clic.
+Sus estilos también podrán ser anulados por el resto de los pseudo selectores de enlaces.
+
+EJ: 
+
+  a:active {
+     background-color: rgb(234, 0, 255);     
+     border-color: rgb(161, 17, 89);     
+     color: red;
+    }
+
+
+F. Pseudo clases de los inputs
+Los inputs son otro de los elementos que tienen pseudo clases especíﬁcas. En este caso serán :focus , :enabled, :disabled y :target.
+
+EJ: 
+  input:focus { border-color: orange; }
+  input:disabled { background-color: gray; }
+  :target { font-weight: bold; }
+
+
+G. :FOCUS
+Se aplica cuando un elemento tiene el foco del cursor, es decir, cuando el cursor se encuentra dentro de dicho elemento.
+El caso más normal es cuando el usuario está completando un campo de un formulario.
+
+EJ: 
+  input:focus {
+    color: orange;
+    font-weight: bold;
+  }
+
+
+
+H. DISABLED
+Se aplica cuando un elemento está deshabilitado, es decir, cuando posee la propiedad disabled.
+Normalmente se utiliza para darle estilos a los campos que no se pueden completar en un formulario.  O a aquellas opciones que están desactivadas.
+
+EJ: 
+    input:disabled {
+      background-color: gray;
+    }
+
+
+
+
+3. Pseudo elementos 
+Los pseudo elementos también se usan junto a los selectores de CSS.
+Para usarlos, escribimos el nombre del selector primero, seguido de doble dos puntos :: y el pseudo elemento que queramos utilizar.
+Los más utilizados son ::before y ::after, pero existen muchos más como ::first-letter y ::first-line.
+
+Ej:
+  selector::pseudo-elemento {
+    propiedad: valor; 
+  }
+
+Esquema general de sintaxis en css:
+selector #id .class :pseudoclase ::pseudoelemento [atributo] {
+  propiedad:  valor;     propiedad:  valor;     propiedad:  valor;
+}
+
+
+
+Por defecto ::before y ::after son elementos de línea, por lo que aparecerán antes y después del contenido existente. Pero podemos transformarlos
+en elementos de bloque y usarlos para cualquier cosa que se nos ocurra.
+
+A. ::BEFORE 
+B. :: AFTER 
+div::before {
+                                                           ┌─────────────────────────────┐
+       content: "Se muestra al principio";     color: red; │                             │
+                                                           │  ┌───────────────────────┐  │
+       color: red;                                         │  │                       │  │
+                                                           │  │se muestra al principio│  │
+       }                                                   │  └───────────────────────┘  │
+                                                           │                             │
+                                                           │                             │
+div::after {                                               │                             │
+                                                           │   este texto esta adentro   │
+      content: "se muestra al final";                      │                             │
+      color: blue;                                         │   del div           ┌──────┬┤
+                                                           │                     │ se   ││
+      }                                                    │                     └──────┴┤
+                                                           ├┬───────────────────┐        │
+                                                           ││ muestra al final  │        │
+                                                           ├┴───────────────────┘        │
+                                                           │                             │
+                                                           └─────────────────────────────┘
+
+
+
+A. ::BEFORE
+Se utiliza junto con la propiedad content para introducir contenido en el documento usando CSS.
+Este nuevo contenido aparecerá antes del contenido interno del elemento.
+EJ:
+    div::before {
+      content: "Esto se renderiza antes del elemento";     
+      color: red;
+    }
+
+
+B. ::AFTER 
+Se utiliza junto con la propiedad content para introducir contenido en el documento usando CSS.
+Este nuevo contenido aparecerá después del contenido interno del elemento.
+
+div::after {
+      content: "Esto se renderiza despues del elemento";     
+      color: red;
+    }
+
+
+
+
+-> Animaciones
+
+
+1. transform
+2. Key Frames 
+3. Transition 
+
+
+
+1. transform
+La propiedad transform permite manipular visualmente un elemento al inclinarlo, rotarlo o escalarlo. Tenemos que pasarle como valor la función que 
+queremos que ejecute.
+transform: function; 
+EJ:
+  De esta manera estamos haciendo que el elemento tenga una escala de 2, aplicado en el lado X e Y.
+  transform: scale(2);
+
+·Scale
+·Skew
+·Rotate
+·Translate
+·Transform-origin 
+
+
+·Scale
+La función scale () se especiﬁca con uno o dos valores, que representan la cantidad de escala que se aplicará en cada dirección.
+scale(x) scale(x, y) (solo numeros)
+
+·Skew 
+La skew() función se especiﬁca con uno o dos valores, que representan la cantidad de sesgo que se aplicará en cada dirección. 
+Si solo especiﬁca un valor, se usa para el eje x y no habrá sesgos en el eje y. (deg) 
+
+·Rotate 
+La función CSS deﬁne una transformación que rota un elemento alrededor de un punto ﬁjo en el plano 2D, sin deformarlo. La medida 
+que se utiliza es deg, que representa un ángulo en grados.(deg) 
+
+·Translate
+Esta transformación está compuesta por un vector bidimensional cuyas coordenadas deﬁnen cuánto se moverá el elemento en cada dirección.
+translate(50px)
+
+·Transform-origin
+La propiedad CSS transform-origin le permite modiﬁcar el origen de las transformaciones de un elemento. Podemos pasarle (9 puntos del ancla)
+como valor en píxeles, top, bottom, right, left.
+ej: transform-origin(bottom right 60px)
+
+
+
+
+
+2. Key frames 
+En CSS podemos crear una animación que se podrá reutilizar. Así como en las transiciones, deberemos indicar cómo serán los diferentes valores, pero esta vez durante toda la animación en los puntos que queramos. Todas las animaciones van desde 0% a 100%. Eso quiere decir que podemos determinar tanto el inicio, el ﬁnal, como cualquier otro punto intermedio entre estos dos valores.
+
+
+               ┌──┐
+               │  │
+               │  │          ┌─┐
+┌─┐            │  │          │ │             ┌┐
+└─┘            └──┘          └─┘             └┘            x
+ 0%  ────────  25%  ────────  50%  ────────  75% ──────── 100%
+
+
+
+ Creando una animación (cont.)
+En primera instancia, tenemos que crear una animación en sí. Para ello vamos a usar la palabra reservada @keyframes y asignarle un nombre.
+En este ejemplo, el nombre será fantasma.
+EJ:
+    @keyframes fantasma {
+       0% { opacity: 0% }
+       25% { transform: translateY(-20px); opacity: 100% }     
+       100% { opacity: 0% }
+    }
+
+
+Asignando una animación
+Algunas de las propiedades para conﬁgurar una animación son las siguientes:
+
+·animation-name
+ Para deﬁnir cuál es la animación que queremos utilizar.
+·animation-duration
+ Para establecer el tiempo que debe durar la animación. El valor puede ser en segundos (s) o milisegundos (ms).
+·animation-iteration-count
+ Para deﬁnir la cantidad de veces que se repetirá la animación. Puede ser un número o la palabra infinite para que se reproduzca inﬁnitamente.
+
+
+ La forma abreviada
+Existe una versión más corta para determinar las diferentes propiedades en una misma línea. Para ello, utilizaremos la propiedad animation.
+EJ: 
+  .fantasma {
+    animation: fantasma 3s infinite;
+  }
+
+
+
+3. Transition 
+
+Valor inicial
+Primero vamos a tener que determinar cuál es el elemento que queremos manipular y a qué propiedad queremos agregarle efecto. 
+Por ejemplo, el color de fondo y el color de la tipografía.
+button {
+  background-color: #eaeaea;
+  color: #000
+}
+
+
+
+Transiciones
+Al crear transiciones podremos modiﬁcar el valor de una propiedad de manera gradual. Para ello necesitamos algunas cosas: una propiedad 
+con un valor inicial, una interacción por la cual este valor se verá modiﬁcado y el nuevo valor que cobrará esta propiedad.
+
+
+
+
+Interacción
+También necesitaremos determinar ante qué interacción este elemento va a cambiar el valor de su propiedad. En este caso, vamos a hacerlo 
+cuando ubiquemos el cursor sobre dicho elemento con la pseudo clase :hover.
+button:hover {
+  background-color: #1a73e8;     
+  color: #fff
+}
+
+
+Valores de transición
+Por último, volvamos al selector del elemento. Aquí agregaremos lo importante: el valor de la propiedad transition. 
+Los valores que podemos utilizar para las transiciones son varios.
+
+·transition-property
+Para deﬁnir los nombres de las propiedades CSS en las que el efecto de la transición debe aplicarse. Podemos poner varias separadas por comas.
+
+transition-duration
+Para establecer el tiempo que debe durar la transición. Por defecto, el valor es de 0s (0 segundos) o 0ms (0 milisegundos). 
+Esto quiere decir que no se producirá ninguna animación.
+
+
+valores de la transicion:
+button {
+    background-color: #eaeaea;
+    color: #000;
+    transition-property: background-color, color; 
+    transition-duration: 0.5s
+}
+
+
+
+
+Propiedad abreviada
+Existe una versión más corta para determinar cuáles propiedades y qué duración tendrá el efecto. Para ello, utilizaremos la propiedad transition.
+button {
+      background-color: #eaeaea;
+       color: #000;
+      transition: background-color 0.5s, color 0.5s ;
+}
+
+
+
+
+Muchas propiedades
+¿Qué podemos hacer si queremos crear una transición para todas las propiedades que se modiﬁquen? Para ello, podemos utilizar la palabra reservada all.
+button {
+      background-color: #eaeaea;
+       color: #000;
+      transition: all 0.5s ;
+}
+
+
+
+
+

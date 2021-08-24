@@ -1,0 +1,45 @@
+@import "variables.scss";
+
+body {
+  header {
+    .img {
+      background: $color-bg-img;
+      display: block;
+      margin-left: auto;
+      margin-right: auto;
+    }
+    .title {
+      background: $color-bg-title;
+      font-family: "Times New Roman";
+      font-style: normal;
+      font-weight: bold;
+      font-size: 35px;
+      line-height: 84.69%;
+      color: $color-fg-text;
+    }
+  }
+  .subtitle {
+    background: $color-fg-text;
+    font-family: "Times New Roman";
+    font-style: normal;
+    font-weight: bold;
+    font-size: $font-size-subtitle;
+    line-height: 84.69%;
+    color: $color-fg-text;
+  }
+  ul {
+    li {
+      display: flex;
+    }
+  }
+  footer {
+    span {
+      text-align: center;
+      background: $color-fg-text;
+      color: $color-fg-span;
+      a {
+        color: $color-fg-span;
+      }
+    }
+  }
+}
